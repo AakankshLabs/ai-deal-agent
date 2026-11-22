@@ -1,63 +1,88 @@
 # AI Deal Discovery & Marketing Agent
 
-A Streamlit portfolio prototype from **AakankshLabs** exploring how product search, a shopper's audience segment, and a spending limit can be combined into a simple deal-discovery experience.
+A Streamlit portfolio prototype from **AakankshLabs** exploring how product search, a shopper's audience segment, and a spending limit can be combined into a deal-discovery experience.
 
-<blockquote>
-<strong>Project status: Early prototype</strong><br>
-This version uses a small, hard-coded sample catalogue and deterministic keyword matching. It is not connected to live retailer inventory and does not use an LLM or machine-learning recommendation model. The word “AI” describes the intended product direction, not the current implementation.
-</blockquote>
+> **Project status: Early prototype.** The current recommender is deterministic and rule-based. It uses a small illustrative catalogue; it is not connected to live retailer inventory and does not use an LLM or a trained machine-learning model.
 
 ## Problem being explored
 
-Shoppers often need to narrow product options by what they want and what they can spend. Marketers also need concise promotional messages for different channels. This prototype brings those two tasks into one small demonstration: find sample products that match a query and budget, then draft basic promotional copy for the first match.
+Shoppers often need to narrow product options by what they want and what they can spend. Marketers also need concise promotional messages for different channels. This prototype brings those tasks into one demonstration: recommend matching sample products within a budget, explain the ranking, and draft basic promotional copy for the top result.
 
-## What the prototype currently does
+## Current features
 
-- Lets a visitor choose a **student**, **gamer**, or **shopper** audience segment.
-- Accepts a free-text product query and a budget between ₹500 and ₹5,000.
-- Checks a small embedded catalogue for products within budget and matching keywords.
-- Displays sample prices, reference prices, discount percentages, and estimated savings.
-- Produces simple Instagram, push-notification, email, and SEO copy from fixed text templates.
-- Displays the selected audience segment as a basic marketing context.
+- Audience selection for student, gamer, or shopper.
+- Free-text product query and adjustable budget.
+- Basic synonym-aware search (for example, headphones can match a headset).
+- Budget filtering and ranked product recommendations.
+- An explainable match score and human-readable reasons for each result.
+- Sample price, reference price, illustrative discount, and estimated savings.
+- Template-based Instagram, push notification, email, and SEO copy.
+
+## Recommendation engine: version 1
+
+The recommendation logic lives in `recommendations.py`, separate from the Streamlit interface.
+
+### Ranking approach
+
+1. **Normalize the query:** convert it to lowercase alphanumeric tokens.
+2. **Expand related terms:** use a small, explicit synonym dictionary.
+3. **Filter by budget:** exclude products priced above the user's budget.
+4. **Measure relevance:** calculate the proportion of query tokens represented in the product name or keywords.
+5. **Calculate supporting signals:** budget fit and illustrative discount.
+6. **Rank and explain:** return a score and reasons for each recommendation.
+
+The current score is a transparent heuristic:
+
+```text
+score = 75% × query relevance
+      + 15% × budget fit
+      + 10% × illustrative discount
+```
+
+A small exact-name bonus may also apply. The score is a ranking aid, not a probability, confidence level, or measured recommendation accuracy.
+
+### Flow
+
+```mermaid
+flowchart TD
+    A[Search query] --> B[Normalize and tokenize]
+    B --> C[Expand known synonyms]
+    D[Sample product catalogue] --> E[Filter by budget]
+    C --> F[Compare query with product text]
+    E --> F
+    F --> G[Calculate relevance, budget fit and discount]
+    G --> H[Rank matching products]
+    H --> I[Show score and explanation]
+    I --> J[Generate template-based marketing copy]
+```
 
 ## Example user journey
 
 1. Select an audience segment, such as **student**.
-2. Enter a product query, such as **shirt**.
-3. Set a maximum budget, such as **₹2,000**.
-4. Select **Generate Smart Deal**.
-5. Review the matching sample products and the promotional copy generated for the first match.
+2. Search for **headphones**.
+3. Set a maximum budget, such as **₹3,000**.
+4. Select **Find recommended deals**.
+5. Review the matching sample product, its score, and the explanation.
 
-The catalogue is illustrative. Product names, sellers, prices, discounts, and image URLs are not live commercial offers.
+The sample catalogue and prices are illustrative. They are not live commercial offers.
 
-## How it works
+## Project structure
 
-```mermaid
-flowchart TD
-    A[Audience selection] --> D[User inputs]
-    B[Product search query] --> D
-    C[Budget limit] --> D
-    D --> E[Filter sample catalogue]
-    E --> F{Within budget and keyword match?}
-    F -->|Yes| G[Display matching sample deals]
-    G --> H[Calculate discount and savings]
-    H --> I[Create template-based marketing copy]
-    F -->|No| J[Show no-match message]
+```text
+ai-deal-agent/
+├── app.py
+├── recommendations.py
+├── requirements.txt
+├── README.md
+└── tests/
+    └── test_recommendations.py
 ```
-
-### Current matching and calculations
-
-- **Budget check:** a product is eligible when its sample price is less than or equal to the selected budget.
-- **Keyword check:** a product is included when any keyword stored for that product appears in the lowercased search text.
-- **Discount percentage:** `(original price - current price) / original price × 100`.
-- **Estimated savings:** `original price - current price`.
-
-This is a transparent rule-based baseline, not semantic search, personalized ranking, or a predictive model.
 
 ## Tech stack
 
-- **Python** — application logic and sample catalogue
-- **Streamlit** — interactive web interface
+- **Python** — application and recommendation logic
+- **Streamlit** — interactive interface
+- **unittest** — automated tests using Python's standard library
 
 ## Run locally
 
@@ -86,38 +111,48 @@ This is a transparent rule-based baseline, not semantic search, personalized ran
    source .venv/bin/activate
    ```
 
-3. Install dependencies and launch:
+3. Install dependencies and run the application:
 
    ```bash
    pip install -r requirements.txt
    streamlit run app.py
    ```
 
+4. Run the automated tests from the repository root:
+
+   ```bash
+   python -m unittest discover -s tests -v
+   ```
+
 ## Current limitations
 
 - The product catalogue is hard-coded in `app.py` and contains only a few examples.
-- Matching uses simple substring checks against manually assigned keywords.
-- The audience selection is displayed as context; it does not currently change the matching or ranking logic.
+- Synonyms are manually defined and do not provide broad language understanding.
+- Matching uses tokens and keyword overlap, not embeddings or semantic search.
+- Ranking weights are heuristic and have not been tuned against user behaviour or relevance labels.
+- Audience selection is displayed as context; it does not yet personalize ranking.
 - Prices, sellers, discounts, and images are illustrative sample data.
-- Marketing messages are fixed templates with product details inserted; they are not generated by a language model.
-- There is no account system, persistent user profile, checkout, payment flow, retailer API, or live inventory validation.
-- The prototype has not been presented as a production-ready recommendation system.
+- Marketing messages are fixed templates, not LLM-generated copy.
+- No user accounts, persistent preferences, checkout, retailer API, or live inventory validation are included.
 
-## Development roadmap
+## Roadmap
 
-- [ ] Separate the product catalogue from the application code.
-- [ ] Improve text normalization, token matching, and category handling.
-- [ ] Add explainable ranking based on query relevance, budget fit, and user preferences.
-- [ ] Make audience segments meaningfully affect recommendations and message tone.
-- [ ] Connect a trusted product feed and validate offer freshness before displaying deals.
-- [ ] Add an optional LLM-assisted copywriting feature with human review and clear safeguards.
-- [ ] Add automated tests, error handling, and deployment documentation.
+- [x] Separate recommendation logic from the Streamlit interface.
+- [x] Add basic synonym-aware matching and explainable ranking.
+- [x] Add automated unit tests for the baseline recommender.
+- [ ] Move the sample catalogue into a structured data source.
+- [ ] Add category metadata and meaningful audience-specific ranking.
+- [ ] Evaluate ranking against a labelled test set and tune weights.
+- [ ] Explore semantic search with embeddings.
+- [ ] Connect a trusted product feed and validate offer freshness.
+- [ ] Add an optional LLM-assisted copywriting feature with human review.
+- [ ] Add deployment, monitoring, and privacy documentation.
 
 ## Portfolio context
 
-This project demonstrates an early product concept at the intersection of **deal discovery, audience segmentation, and marketing content workflows**. It can be discussed as a prototype exercise in translating a marketing problem into a simple interactive product flow, defining a baseline matching approach, and identifying the next technical steps.
+This project demonstrates an early product concept at the intersection of **deal discovery, audience segmentation, and marketing content workflows**. The current version is useful as a transparent baseline before introducing more advanced recommendation methods.
 
-**Areas explored:** product thinking, user-input design, budget-based filtering, basic Python application logic, Streamlit, and marketing communication.
+**Areas explored:** product thinking, user-input design, Python, Streamlit, text normalization, synonym mapping, heuristic ranking, explainability, and unit testing.
 
 ## About AakankshLabs
 
