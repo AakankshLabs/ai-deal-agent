@@ -7,6 +7,7 @@ A Streamlit portfolio prototype from **AakankshLabs** exploring product search, 
 ## Current features
 
 - Seven selectable shopper personas with explicit needs and priorities.
+- Structured 100-product synthetic catalogue stored separately from the interface.
 - Free-text product query and adjustable budget.
 - Synonym-aware search (for example, headphones can match a headset).
 - Budget filtering and persona-aware ranking.
@@ -76,12 +77,18 @@ flowchart TD
 ```text
 ai-deal-agent/
 ├── app.py
+├── data/
+│   └── products.json
 ├── recommendations.py
 ├── requirements.txt
 ├── README.md
 └── tests/
     └── test_recommendations.py
 ```
+
+## Sample catalogue data model
+
+The catalogue is stored in `data/products.json` and includes a stable sample ID, product name, brand label, category, subcategory, description, INR price, illustrative reference price, features, keywords, persona tags, sample seller label, sample-only availability, and a data disclaimer. All records are synthetic and must not be represented as live products or offers.
 
 ## Tech stack
 
@@ -124,7 +131,7 @@ python -m unittest discover -s tests -v
 
 ## Current limitations
 
-- The catalogue is small and hard-coded in `app.py`.
+- The catalogue contains 100 synthetic sample records in `data/products.json`; it is not a real retailer feed.
 - Persona profiles and preferences are manually authored hypotheses.
 - Product category and persona tags are manually assigned.
 - Synonym matching is limited to a small dictionary.
@@ -140,7 +147,7 @@ python -m unittest discover -s tests -v
 - [x] Add synonym-aware matching and explainable ranking.
 - [x] Add automated unit tests for the baseline recommender.
 - [x] Add detailed personas and persona-aware ranking.
-- [ ] Move the sample catalogue into a structured data source.
+- [x] Move the 100-product sample catalogue into a versioned JSON data source.
 - [ ] Validate persona hypotheses with user research.
 - [ ] Evaluate ranking against a labelled test set and tune weights.
 - [ ] Explore semantic search with embeddings.
