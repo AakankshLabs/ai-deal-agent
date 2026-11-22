@@ -11,7 +11,9 @@ A Streamlit portfolio prototype from **AakankshLabs** exploring product search, 
 - Free-text product query and adjustable budget.
 - Synonym-aware search (for example, headphones can match a headset).
 - Budget filtering and persona-aware ranking.
-- Explainable match score and human-readable recommendation reasons.
+- Explainable match score, component-level score breakdown, and human-readable recommendation reasons.
+- Per-product relevant / not relevant feedback controls.
+- Session-only search and feedback analytics with CSV export (no server-side persistence).
 - Illustrative price, discount, and savings calculations.
 - Template-based Instagram, push notification, email, and SEO copy.
 
@@ -82,6 +84,8 @@ ai-deal-agent/
 ├── recommendations.py
 ├── requirements.txt
 ├── README.md
+├── docs/
+│   └── DEPLOYMENT.md
 └── tests/
     ├── test_recommendations.py
     └── test_catalogue.py
@@ -130,6 +134,14 @@ Run automated tests:
 python -m unittest discover -s tests -v
 ```
 
+## Feedback and analytics
+
+Users can mark recommendations as relevant or not relevant. Search counts and feedback totals are summarized in a session analytics panel, with an optional CSV export. These events are held only in Streamlit session state: they are not sent to a database, retained across sessions, or used to train the recommender. The score breakdown shows the heuristic contribution points so users can understand the ranking; it is not a probability or confidence estimate.
+
+## Deployment
+
+The app is structured for deployment on Streamlit Community Cloud. Follow the step-by-step instructions in [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md). Deployment has not yet been performed; the repository's CI passing does not mean a hosted app is live.
+
 ## Current limitations
 
 - The catalogue contains 100 synthetic sample records in `data/products.json`; it is not a real retailer feed.
@@ -155,7 +167,10 @@ python -m unittest discover -s tests -v
 - [ ] Explore semantic search with embeddings.
 - [ ] Connect a trusted product feed and validate offer freshness.
 - [ ] Add an optional LLM-assisted copywriting feature with human review.
-- [ ] Add deployment, monitoring, and privacy documentation.
+- [x] Add session-only recommendation feedback and analytics export.
+- [x] Show transparent score component breakdowns.
+- [x] Document the Streamlit Community Cloud deployment process.
+- [ ] Deploy and run external usability testing.
 
 ## Portfolio context
 
