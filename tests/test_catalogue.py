@@ -53,6 +53,32 @@ class CatalogueTests(unittest.TestCase):
         self.assertTrue(all(item["recommendation_reasons"] for item in results))
         self.assertTrue(all("recommendation_score" in item for item in results))
 
+    def test_catalogue_multiword_search_requires_all_terms_and_budget(self):
+        # At ₹1,000, no keyboard product is affordable. A gaming mouse pad
+        # must not leak into results just because it contains "gaming".
+        self.assertEqual(
+            recommend_products(
+                self.products, "gaming keyboard", 1000, "Competitive gamer"
+            ),
+            [],
+        )
+
+        # At ₹2,000, the actual gaming keyboard is eligible and should match.
+        results = recommend_products(
+            self.products, "gaming keyboard", 2000, "Competitive gamer"
+        )
+        self.assertEqual(
+            [item["name"] for item in results],
+            ["Mechanical Gaming Keyboard"],
+        )
+
+    def test_catalogue_keyboard_query_does_not_return_unrelated_products(self):
+        results = recommend_products(
+            self.products, "keyboard", 1000, "Competitive gamer"
+        )
+        self.assertEqual(results, [])
+
+
     def test_each_persona_can_query_the_full_catalogue(self):
         for persona_name in PERSONAS:
             with self.subTest(persona=persona_name):
