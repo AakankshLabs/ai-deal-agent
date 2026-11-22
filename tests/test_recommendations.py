@@ -1,6 +1,6 @@
 import unittest
 
-from recommendations import recommend_products, tokenize
+from recommendations import PERSONAS, recommend_products, tokenize
 
 
 SAMPLE_PRODUCTS = [
@@ -9,24 +9,32 @@ SAMPLE_PRODUCTS = [
         "price": 1200,
         "original": 2000,
         "keywords": ["shirt", "fashion"],
+        "categories": ["fashion"],
+        "persona_tags": ["student", "shopper"],
     },
     {
         "name": "Formal Shirt",
         "price": 2500,
         "original": 3500,
         "keywords": ["shirt", "fashion"],
+        "categories": ["fashion"],
+        "persona_tags": ["student", "shopper"],
     },
     {
         "name": "Sports Shoes",
         "price": 2499,
         "original": 4000,
-        "keywords": ["shoes", "fashion"],
+        "keywords": ["shoes", "fashion", "fitness"],
+        "categories": ["footwear", "fitness"],
+        "persona_tags": ["student", "shopper"],
     },
     {
         "name": "Gaming Headset",
         "price": 1999,
         "original": 3000,
-        "keywords": ["gaming", "gamer"],
+        "keywords": ["gaming", "gamer", "headphones"],
+        "categories": ["gaming", "audio", "electronics"],
+        "persona_tags": ["gamer"],
     },
 ]
 
@@ -52,6 +60,25 @@ class RecommendationTests(unittest.TestCase):
         )
         self.assertTrue(results[0]["recommendation_reasons"])
 
+    def test_persona_changes_ranking_for_same_query(self):
+        # Both shirts match the query, but the student persona prefers the
+        # lower-priced campus-casual item in this sample catalogue.
+        products = [
+            dict(SAMPLE_PRODUCTS[0], categories=["fashion"], features=["campus"]),
+            dict(SAMPLE_PRODUCTS[1], categories=["formalwear"], features=["office"]),
+        ]
+        results = recommend_products(
+            products, "shirt", 3000, "Budget-conscious student"
+        )
+        self.assertEqual(results[0]["name"], "Casual Shirt")
+
+    def test_persona_catalogue_contains_seven_detailed_profiles(self):
+        self.assertEqual(len(PERSONAS), 7)
+        for persona in PERSONAS.values():
+            self.assertTrue(persona["description"])
+            self.assertTrue(persona["priorities"])
+            self.assertTrue(persona["preferred_categories"])
+
     def test_no_match_returns_empty_list(self):
         self.assertEqual(recommend_products(SAMPLE_PRODUCTS, "camera", 5000), [])
 
@@ -61,7 +88,7 @@ class RecommendationTests(unittest.TestCase):
 
     def test_original_catalogue_is_not_mutated(self):
         products = [dict(SAMPLE_PRODUCTS[0])]
-        recommend_products(products, "shirt", 2000)
+        recommend_products(products, "shirt", 2000, "Budget-conscious student")
         self.assertNotIn("recommendation_score", products[0])
 
 
