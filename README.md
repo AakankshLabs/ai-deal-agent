@@ -2,7 +2,7 @@
 
 A Streamlit portfolio prototype from **AakankshLabs** exploring product search, shopper personas, budget fit, explainable recommendations, and marketing content workflows.
 
-> **Project status: Early prototype.** The recommender is deterministic and rule-based. It uses a small illustrative catalogue; it is not connected to live retailer inventory and does not use an LLM or a trained machine-learning model.
+> **Project status: Early prototype.** The recommender is deterministic and rule-based. It uses a structured catalogue of 100 synthetic sample products; it is not connected to live retailer inventory and does not use an LLM or a trained machine-learning model.
 
 ## Current features
 
@@ -83,7 +83,8 @@ ai-deal-agent/
 ├── requirements.txt
 ├── README.md
 └── tests/
-    └── test_recommendations.py
+    ├── test_recommendations.py
+    └── test_catalogue.py
 ```
 
 ## Sample catalogue data model
@@ -94,7 +95,7 @@ The catalogue is stored in `data/products.json` and includes a stable sample ID,
 
 - **Python** — application and recommendation logic
 - **Streamlit** — interactive interface
-- **unittest** — automated tests using Python's standard library
+- **unittest** — automated recommendation and catalogue validation tests using Python's standard library
 
 ## Run locally
 
@@ -148,6 +149,7 @@ python -m unittest discover -s tests -v
 - [x] Add automated unit tests for the baseline recommender.
 - [x] Add detailed personas and persona-aware ranking.
 - [x] Move the 100-product sample catalogue into a versioned JSON data source.
+- [x] Add catalogue schema, uniqueness, and sample-data validation tests.
 - [ ] Validate persona hypotheses with user research.
 - [ ] Evaluate ranking against a labelled test set and tune weights.
 - [ ] Explore semantic search with embeddings.
