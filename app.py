@@ -1,18 +1,25 @@
 import streamlit as st
 
-# Page config
-st.set_page_config(page_title="StudX AI Marketplace", layout="centered")
+# Page configuration
+st.set_page_config(
+    page_title="AI Deal Discovery & Marketing Agent",
+    page_icon="🛍️",
+    layout="centered",
+)
 
-# Title
-st.title("🛒 StudX AI Deal Marketplace")
-st.write("Find the best student deals based on your needs & budget")
+st.title("🛍️ AI Deal Discovery & Marketing Agent")
+st.write("Explore sample product deals using a search query and budget.")
+st.caption(
+    "Portfolio prototype: matching is rule-based and all catalogue data is illustrative. "
+    "No live retailer prices or inventory are connected."
+)
 
-# Inputs
-user_type = st.selectbox("User Type", ["student", "gamer", "shopper"])
-product_input = st.text_input("What are you looking for?")
-budget = st.slider("Budget", 500, 5000, 3000)
+# Shopper inputs
+user_type = st.selectbox("Audience segment", ["student", "gamer", "shopper"])
+product_input = st.text_input("What product are you looking for?", placeholder="e.g. shirt, shoes, gaming")
+budget = st.slider("Maximum budget (₹)", min_value=500, max_value=5000, value=3000, step=100)
 
-# Product database (with images + original price)
+# Illustrative sample catalogue
 products = [
     {
         "name": "Casual Shirt",
@@ -20,7 +27,7 @@ products = [
         "original": 2000,
         "keywords": ["shirt", "fashion"],
         "seller": "Student Seller",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://via.placeholder.com/150",
     },
     {
         "name": "Formal Shirt",
@@ -28,7 +35,7 @@ products = [
         "original": 3500,
         "keywords": ["shirt", "fashion"],
         "seller": "Campus Sale",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://via.placeholder.com/150",
     },
     {
         "name": "Sports Shoes",
@@ -36,7 +43,7 @@ products = [
         "original": 4000,
         "keywords": ["shoes", "fashion"],
         "seller": "Senior Seller",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://via.placeholder.com/150",
     },
     {
         "name": "Gaming Headset",
@@ -44,7 +51,7 @@ products = [
         "original": 3000,
         "keywords": ["gaming", "gamer"],
         "seller": "Tech Club",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://via.placeholder.com/150",
     },
     {
         "name": "Smart Gadget",
@@ -52,60 +59,66 @@ products = [
         "original": 3500,
         "keywords": ["gadget", "tech"],
         "seller": "Student Store",
-        "image": "https://via.placeholder.com/150"
-    }
+        "image": "https://via.placeholder.com/150",
+    },
 ]
 
-# Button
-if st.button("🚀 Generate Smart Deal"):
+if st.button("🚀 Generate sample deals", type="primary"):
+    query = product_input.strip().lower()
 
-    if not product_input:
-        st.warning("⚠️ Please enter what you're looking for")
+    if not query:
+        st.warning("Enter a product or category to search.")
     else:
-        results = []
+        results = [
+            product
+            for product in products
+            if product["price"] <= budget
+            and any(keyword in query for keyword in product["keywords"])
+        ]
 
-        # Matching logic
-        for p in products:
-            if p["price"] <= budget:
-                if any(k in product_input.lower() for k in p["keywords"]):
-                    results.append(p)
-
-        # Output
         if results:
-            st.success("🎯 Best Deals Found!")
+            st.success(f"Found {len(results)} matching sample deal(s).")
 
-            for p in results:
-                discount = int(((p["original"] - p["price"]) / p["original"]) * 100)
-                savings = p["original"] - p["price"]
+            for product in results:
+                discount = round(
+                    ((product["original"] - product["price"]) / product["original"]) * 100
+                )
+                savings = product["original"] - product["price"]
 
-                # Card layout
-                st.markdown("---")
-                col1, col2 = st.columns([1, 2])
+                st.divider()
+                image_col, details_col = st.columns([1, 2])
 
-                with col1:
-                    st.image(p["image"], width=120)
+                with image_col:
+                    st.image(product["image"], width=120)
 
-                with col2:
-                    st.subheader(f"{p['name']} ({p['seller']})")
-                    st.write(f"💰 Price: ₹{p['price']}")
-                    st.write(f"🔥 {discount}% OFF (₹{p['original']} → ₹{p['price']})")
-                    st.write(f"💸 You save ₹{savings}")
-                    st.write(f"💡 Matches your search '{product_input}' under ₹{budget}")
+                with details_col:
+                    st.subheader(f"{product['name']} — {product['seller']}")
+                    st.write(f"**Sample price:** ₹{product['price']:,}")
+                    st.write(
+                        f"**Illustrative discount:** {discount}% "
+                        f"(₹{product['original']:,} → ₹{product['price']:,})"
+                    )
+                    st.write(f"**Estimated savings:** ₹{savings:,}")
+                    st.caption(f"Matched query “{product_input}” within a ₹{budget:,} budget.")
 
-            # Marketing Content
+            # Template-based marketing copy for the first match
             best = results[0]
-            st.markdown("---")
-            st.subheader("📢 Marketing Content")
+            st.divider()
+            st.subheader("📣 Marketing copy examples")
+            st.write(f"**Instagram:** Don’t miss this {best['name']} now at ₹{best['price']:,}!")
+            st.write(f"**Push notification:** Deal example: {best['name']} at ₹{best['price']:,}.")
+            st.write(f"**Email subject:** Sample deal alert — {best['name']} at ₹{best['price']:,}.")
+            st.write(f"**SEO snippet:** Explore {product_input} within a budget of ₹{budget:,}.")
 
-            st.write(f"Instagram: Don’t miss this {best['name']} now at ₹{best['price']} 🚀")
-            st.write(f"Push: Limited Deal! Grab {best['name']} at ₹{best['price']}")
-            st.write(f"Email: Exclusive Deal Alert – {best['name']} at ₹{best['price']}")
-            st.write(f"SEO: Best {product_input} under ₹{budget}")
-
-            # Insight
-            st.markdown("---")
-            st.subheader("📊 Insight")
-            st.write(f"This deal targets **{user_type} users**, increasing engagement.")
-
+            st.divider()
+            st.subheader("📊 Audience context")
+            st.write(
+                f"This search was run with the **{user_type}** audience segment selected. "
+                "In this prototype, the segment is shown as context and does not yet alter results."
+            )
         else:
-            st.error("❌ No matching deals found")
+            st.info(
+                "No sample products matched both the query and budget. "
+                "Try a keyword such as shirt, shoes, gaming, gadget, or tech, "
+                "or increase your budget."
+            )
