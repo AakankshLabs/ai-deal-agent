@@ -60,6 +60,17 @@ class RecommendationTests(unittest.TestCase):
         )
         self.assertTrue(results[0]["recommendation_reasons"])
 
+    def test_score_breakdown_is_present_and_transparent(self):
+        result = recommend_products(
+            SAMPLE_PRODUCTS, "shirt", 3000, "Budget-conscious student"
+        )[0]
+        breakdown = result["recommendation_score_breakdown"]
+        self.assertIn("Query relevance (60%)", breakdown)
+        self.assertIn("Persona fit (20%)", breakdown)
+        self.assertIn("Budget fit (12%)", breakdown)
+        self.assertIn("Illustrative discount (8%)", breakdown)
+        self.assertTrue(all(0 <= value <= 100 for value in breakdown.values()))
+
     def test_persona_changes_ranking_for_same_query(self):
         # Both shirts match the query, but the student persona prefers the
         # lower-priced campus-casual item in this sample catalogue.
