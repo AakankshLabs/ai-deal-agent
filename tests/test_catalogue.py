@@ -2,6 +2,8 @@ import json
 import unittest
 from pathlib import Path
 
+from recommendations import PERSONAS, recommend_products
+
 
 class CatalogueTests(unittest.TestCase):
     @classmethod
@@ -40,6 +42,24 @@ class CatalogueTests(unittest.TestCase):
             self.assertEqual(product["availability"], "sample_only")
             self.assertIsNone(product["product_url"])
             self.assertIn("synthetic", product["data_note"].lower())
+
+
+    def test_full_catalogue_integrates_with_recommendation_engine(self):
+        results = recommend_products(
+            self.products, "gaming", 5000, "Competitive gamer"
+        )
+        self.assertTrue(results)
+        self.assertTrue(all(item["price"] <= 5000 for item in results))
+        self.assertTrue(all(item["recommendation_reasons"] for item in results))
+        self.assertTrue(all("recommendation_score" in item for item in results))
+
+    def test_each_persona_can_query_the_full_catalogue(self):
+        for persona_name in PERSONAS:
+            with self.subTest(persona=persona_name):
+                results = recommend_products(
+                    self.products, "student essentials", 5000, persona_name
+                )
+                self.assertIsInstance(results, list)
 
     def test_catalogue_covers_ten_categories(self):
         categories = {product["category"] for product in self.products}
