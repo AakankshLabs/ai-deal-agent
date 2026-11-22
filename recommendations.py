@@ -125,7 +125,11 @@ def recommend_products(products, query, budget, persona_name=None):
             for token, alternatives in expanded_tokens.items()
             if product_tokens.intersection(alternatives)
         ]
-        if not matched_terms:
+
+        # Treat multi-word searches as a complete intent: every query token
+        # must match directly or through its synonym group. This prevents a
+        # product matching only "gaming" from appearing for "gaming keyboard".
+        if len(matched_terms) != len(query_tokens):
             continue
 
         relevance = len(matched_terms) / len(query_tokens)
