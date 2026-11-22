@@ -43,6 +43,39 @@ class RecommendationTests(unittest.TestCase):
     def test_tokenize_removes_punctuation_and_normalizes_case(self):
         self.assertEqual(tokenize("Gaming-Headphones!"), ["gaming", "headphones"])
 
+    def test_plural_search_matches_singular_catalogue_product(self):
+        products = [
+            {
+                "name": "Bluetooth Speaker",
+                "price": 592,
+                "original": 700,
+                "keywords": ["bluetooth", "audio", "portable"],
+                "categories": ["audio"],
+                "persona_tags": ["shopper"],
+            }
+        ]
+
+        results = recommend_products(products, "bluetooth speakers", 1000)
+        self.assertEqual([item["name"] for item in results], ["Bluetooth Speaker"])
+
+        # Plural normalization must never bypass the maximum-budget filter.
+        over_budget_results = recommend_products(products, "bluetooth speakers", 500)
+        self.assertEqual(over_budget_results, [])
+
+    def test_common_plural_forms_match_singular_products(self):
+        products = [
+            {
+                "name": "Gaming Keyboard",
+                "price": 900,
+                "original": 1100,
+                "keywords": ["gaming", "keyboard", "mechanical"],
+                "categories": ["gaming"],
+                "persona_tags": ["gamer"],
+            }
+        ]
+        results = recommend_products(products, "gaming keyboards", 1000)
+        self.assertEqual([item["name"] for item in results], ["Gaming Keyboard"])
+
     def test_synonym_query_finds_related_product(self):
         results = recommend_products(SAMPLE_PRODUCTS, "headphones", 3000)
         self.assertEqual([item["name"] for item in results], ["Gaming Headset"])
