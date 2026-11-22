@@ -1,0 +1,4064 @@
+{
+  "catalogue_name": "AakankshLabs illustrative product catalogue",
+  "version": "1.0.0",
+  "record_count": 100,
+  "currency": "INR",
+  "data_status": "synthetic_sample_data",
+  "disclaimer": "All products, brands, sellers, prices, discounts, and availability are illustrative synthetic data. No real retailer or merchant feed is connected.",
+  "products": [
+    {
+      "id": "SAMPLE-001",
+      "name": "A5 Ruled Notebook",
+      "brand": "Sample Brand",
+      "category": "student_essentials",
+      "subcategory": "stationery",
+      "description": "Illustrative a5 ruled notebook for study, campus, school use cases.",
+      "price": 180,
+      "original": 200,
+      "currency": "INR",
+      "features": [
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "keywords": [
+        "a5",
+        "ruled",
+        "notebook",
+        "student",
+        "essentials",
+        "stationery",
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "categories": [
+        "student_essentials",
+        "stationery"
+      ],
+      "persona_tags": [
+        "student"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-002",
+      "name": "Premium Planner",
+      "brand": "Sample Brand",
+      "category": "student_essentials",
+      "subcategory": "stationery",
+      "description": "Illustrative premium planner for study, campus, school use cases.",
+      "price": 346,
+      "original": 420,
+      "currency": "INR",
+      "features": [
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "keywords": [
+        "premium",
+        "planner",
+        "student",
+        "essentials",
+        "stationery",
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "categories": [
+        "student_essentials",
+        "stationery"
+      ],
+      "persona_tags": [
+        "student"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-003",
+      "name": "Gel Pen Set",
+      "brand": "Sample Brand",
+      "category": "student_essentials",
+      "subcategory": "stationery",
+      "description": "Illustrative gel pen set for study, campus, school use cases.",
+      "price": 512,
+      "original": 660,
+      "currency": "INR",
+      "features": [
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "keywords": [
+        "gel",
+        "pen",
+        "set",
+        "student",
+        "essentials",
+        "stationery",
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "categories": [
+        "student_essentials",
+        "stationery"
+      ],
+      "persona_tags": [
+        "student"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-004",
+      "name": "Study Desk Organizer",
+      "brand": "Sample Brand",
+      "category": "student_essentials",
+      "subcategory": "stationery",
+      "description": "Illustrative study desk organizer for study, campus, school use cases.",
+      "price": 678,
+      "original": 920,
+      "currency": "INR",
+      "features": [
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "keywords": [
+        "study",
+        "desk",
+        "organizer",
+        "student",
+        "essentials",
+        "stationery",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "categories": [
+        "student_essentials",
+        "stationery"
+      ],
+      "persona_tags": [
+        "student"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-005",
+      "name": "Sticky Notes Bundle",
+      "brand": "Sample Brand",
+      "category": "student_essentials",
+      "subcategory": "stationery",
+      "description": "Illustrative sticky notes bundle for study, campus, school use cases.",
+      "price": 844,
+      "original": 950,
+      "currency": "INR",
+      "features": [
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "keywords": [
+        "sticky",
+        "notes",
+        "bundle",
+        "student",
+        "essentials",
+        "stationery",
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "categories": [
+        "student_essentials",
+        "stationery"
+      ],
+      "persona_tags": [
+        "student"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-006",
+      "name": "Document Folder Set",
+      "brand": "Sample Brand",
+      "category": "student_essentials",
+      "subcategory": "stationery",
+      "description": "Illustrative document folder set for study, campus, school use cases.",
+      "price": 1010,
+      "original": 1210,
+      "currency": "INR",
+      "features": [
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "keywords": [
+        "document",
+        "folder",
+        "set",
+        "student",
+        "essentials",
+        "stationery",
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "categories": [
+        "student_essentials",
+        "stationery"
+      ],
+      "persona_tags": [
+        "student"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-007",
+      "name": "Scientific Calculator",
+      "brand": "Sample Brand",
+      "category": "student_essentials",
+      "subcategory": "stationery",
+      "description": "Illustrative scientific calculator for study, campus, school use cases.",
+      "price": 1176,
+      "original": 1510,
+      "currency": "INR",
+      "features": [
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "keywords": [
+        "scientific",
+        "calculator",
+        "student",
+        "essentials",
+        "stationery",
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "categories": [
+        "student_essentials",
+        "stationery"
+      ],
+      "persona_tags": [
+        "student"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-008",
+      "name": "Exam Revision Cards",
+      "brand": "Sample Brand",
+      "category": "student_essentials",
+      "subcategory": "stationery",
+      "description": "Illustrative exam revision cards for study, campus, school use cases.",
+      "price": 1342,
+      "original": 1830,
+      "currency": "INR",
+      "features": [
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "keywords": [
+        "exam",
+        "revision",
+        "cards",
+        "student",
+        "essentials",
+        "stationery",
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "categories": [
+        "student_essentials",
+        "stationery"
+      ],
+      "persona_tags": [
+        "student"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-009",
+      "name": "Laptop Sleeve",
+      "brand": "Sample Brand",
+      "category": "student_essentials",
+      "subcategory": "stationery",
+      "description": "Illustrative laptop sleeve for study, campus, school use cases.",
+      "price": 1508,
+      "original": 1690,
+      "currency": "INR",
+      "features": [
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "keywords": [
+        "laptop",
+        "sleeve",
+        "student",
+        "essentials",
+        "stationery",
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "categories": [
+        "student_essentials",
+        "stationery"
+      ],
+      "persona_tags": [
+        "student"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-010",
+      "name": "Reusable Water Bottle",
+      "brand": "Sample Brand",
+      "category": "student_essentials",
+      "subcategory": "stationery",
+      "description": "Illustrative reusable water bottle for study, campus, school use cases.",
+      "price": 224,
+      "original": 270,
+      "currency": "INR",
+      "features": [
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "keywords": [
+        "reusable",
+        "water",
+        "bottle",
+        "student",
+        "essentials",
+        "stationery",
+        "study",
+        "campus",
+        "school",
+        "college",
+        "everyday"
+      ],
+      "categories": [
+        "student_essentials",
+        "stationery"
+      ],
+      "persona_tags": [
+        "student"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-011",
+      "name": "Casual Cotton Shirt",
+      "brand": "Sample Brand",
+      "category": "fashion",
+      "subcategory": "clothing",
+      "description": "Illustrative casual cotton shirt for clothing, style, casual use cases.",
+      "price": 940,
+      "original": 1050,
+      "currency": "INR",
+      "features": [
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "keywords": [
+        "casual",
+        "cotton",
+        "shirt",
+        "fashion",
+        "clothing",
+        "style",
+        "wear",
+        "outfit"
+      ],
+      "categories": [
+        "fashion",
+        "clothing"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-012",
+      "name": "Classic Formal Shirt",
+      "brand": "Sample Brand",
+      "category": "fashion",
+      "subcategory": "clothing",
+      "description": "Illustrative classic formal shirt for clothing, style, casual use cases.",
+      "price": 1106,
+      "original": 1330,
+      "currency": "INR",
+      "features": [
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "keywords": [
+        "classic",
+        "formal",
+        "shirt",
+        "fashion",
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "categories": [
+        "fashion",
+        "clothing"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-013",
+      "name": "Graphic T-Shirt",
+      "brand": "Sample Brand",
+      "category": "fashion",
+      "subcategory": "clothing",
+      "description": "Illustrative graphic t-shirt for clothing, style, casual use cases.",
+      "price": 1272,
+      "original": 1630,
+      "currency": "INR",
+      "features": [
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "keywords": [
+        "graphic",
+        "tshirt",
+        "fashion",
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "categories": [
+        "fashion",
+        "clothing"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-014",
+      "name": "Everyday Hoodie",
+      "brand": "Sample Brand",
+      "category": "fashion",
+      "subcategory": "clothing",
+      "description": "Illustrative everyday hoodie for clothing, style, casual use cases.",
+      "price": 1438,
+      "original": 1960,
+      "currency": "INR",
+      "features": [
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "keywords": [
+        "everyday",
+        "hoodie",
+        "fashion",
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "categories": [
+        "fashion",
+        "clothing"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-015",
+      "name": "Cotton Kurta",
+      "brand": "Sample Brand",
+      "category": "fashion",
+      "subcategory": "clothing",
+      "description": "Illustrative cotton kurta for clothing, style, casual use cases.",
+      "price": 1604,
+      "original": 1800,
+      "currency": "INR",
+      "features": [
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "keywords": [
+        "cotton",
+        "kurta",
+        "fashion",
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "categories": [
+        "fashion",
+        "clothing"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-016",
+      "name": "Denim Jacket",
+      "brand": "Sample Brand",
+      "category": "fashion",
+      "subcategory": "clothing",
+      "description": "Illustrative denim jacket for clothing, style, casual use cases.",
+      "price": 1770,
+      "original": 2120,
+      "currency": "INR",
+      "features": [
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "keywords": [
+        "denim",
+        "jacket",
+        "fashion",
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "categories": [
+        "fashion",
+        "clothing"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-017",
+      "name": "Casual Trousers",
+      "brand": "Sample Brand",
+      "category": "fashion",
+      "subcategory": "clothing",
+      "description": "Illustrative casual trousers for clothing, style, casual use cases.",
+      "price": 1936,
+      "original": 2480,
+      "currency": "INR",
+      "features": [
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "keywords": [
+        "casual",
+        "trousers",
+        "fashion",
+        "clothing",
+        "style",
+        "wear",
+        "outfit"
+      ],
+      "categories": [
+        "fashion",
+        "clothing"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-018",
+      "name": "Everyday Jeans",
+      "brand": "Sample Brand",
+      "category": "fashion",
+      "subcategory": "clothing",
+      "description": "Illustrative everyday jeans for clothing, style, casual use cases.",
+      "price": 652,
+      "original": 890,
+      "currency": "INR",
+      "features": [
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "keywords": [
+        "everyday",
+        "jeans",
+        "fashion",
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "categories": [
+        "fashion",
+        "clothing"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-019",
+      "name": "Oversized Sweatshirt",
+      "brand": "Sample Brand",
+      "category": "fashion",
+      "subcategory": "clothing",
+      "description": "Illustrative oversized sweatshirt for clothing, style, casual use cases.",
+      "price": 818,
+      "original": 920,
+      "currency": "INR",
+      "features": [
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "keywords": [
+        "oversized",
+        "sweatshirt",
+        "fashion",
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "categories": [
+        "fashion",
+        "clothing"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-020",
+      "name": "Lightweight Windcheater",
+      "brand": "Sample Brand",
+      "category": "fashion",
+      "subcategory": "clothing",
+      "description": "Illustrative lightweight windcheater for clothing, style, casual use cases.",
+      "price": 984,
+      "original": 1180,
+      "currency": "INR",
+      "features": [
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "keywords": [
+        "lightweight",
+        "windcheater",
+        "fashion",
+        "clothing",
+        "style",
+        "casual",
+        "wear",
+        "outfit"
+      ],
+      "categories": [
+        "fashion",
+        "clothing"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-021",
+      "name": "Everyday Sneakers",
+      "brand": "Sample Brand",
+      "category": "footwear",
+      "subcategory": "shoes",
+      "description": "Illustrative everyday sneakers for shoes, comfort, walking use cases.",
+      "price": 1480,
+      "original": 1660,
+      "currency": "INR",
+      "features": [
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "keywords": [
+        "everyday",
+        "sneakers",
+        "footwear",
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "categories": [
+        "footwear",
+        "shoes"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-022",
+      "name": "Running Shoes",
+      "brand": "Sample Brand",
+      "category": "footwear",
+      "subcategory": "shoes",
+      "description": "Illustrative running shoes for shoes, comfort, walking use cases.",
+      "price": 1646,
+      "original": 1980,
+      "currency": "INR",
+      "features": [
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "keywords": [
+        "running",
+        "shoes",
+        "footwear",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "categories": [
+        "footwear",
+        "shoes"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-023",
+      "name": "Campus Slip-ons",
+      "brand": "Sample Brand",
+      "category": "footwear",
+      "subcategory": "shoes",
+      "description": "Illustrative campus slip-ons for shoes, comfort, walking use cases.",
+      "price": 1812,
+      "original": 2320,
+      "currency": "INR",
+      "features": [
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "keywords": [
+        "campus",
+        "slipons",
+        "footwear",
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "categories": [
+        "footwear",
+        "shoes"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-024",
+      "name": "Training Shoes",
+      "brand": "Sample Brand",
+      "category": "footwear",
+      "subcategory": "shoes",
+      "description": "Illustrative training shoes for shoes, comfort, walking use cases.",
+      "price": 1978,
+      "original": 2690,
+      "currency": "INR",
+      "features": [
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "keywords": [
+        "training",
+        "shoes",
+        "footwear",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "categories": [
+        "footwear",
+        "shoes"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-025",
+      "name": "Casual Loafers",
+      "brand": "Sample Brand",
+      "category": "footwear",
+      "subcategory": "shoes",
+      "description": "Illustrative casual loafers for shoes, comfort, walking use cases.",
+      "price": 2144,
+      "original": 2400,
+      "currency": "INR",
+      "features": [
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "keywords": [
+        "casual",
+        "loafers",
+        "footwear",
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "categories": [
+        "footwear",
+        "shoes"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-026",
+      "name": "Walking Shoes",
+      "brand": "Sample Brand",
+      "category": "footwear",
+      "subcategory": "shoes",
+      "description": "Illustrative walking shoes for shoes, comfort, walking use cases.",
+      "price": 2310,
+      "original": 2770,
+      "currency": "INR",
+      "features": [
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "keywords": [
+        "walking",
+        "shoes",
+        "footwear",
+        "comfort",
+        "active",
+        "style"
+      ],
+      "categories": [
+        "footwear",
+        "shoes"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-027",
+      "name": "Canvas Shoes",
+      "brand": "Sample Brand",
+      "category": "footwear",
+      "subcategory": "shoes",
+      "description": "Illustrative canvas shoes for shoes, comfort, walking use cases.",
+      "price": 1026,
+      "original": 1310,
+      "currency": "INR",
+      "features": [
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "keywords": [
+        "canvas",
+        "shoes",
+        "footwear",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "categories": [
+        "footwear",
+        "shoes"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-028",
+      "name": "Lightweight Sports Shoes",
+      "brand": "Sample Brand",
+      "category": "footwear",
+      "subcategory": "shoes",
+      "description": "Illustrative lightweight sports shoes for shoes, comfort, walking use cases.",
+      "price": 1192,
+      "original": 1620,
+      "currency": "INR",
+      "features": [
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "keywords": [
+        "lightweight",
+        "sports",
+        "shoes",
+        "footwear",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "categories": [
+        "footwear",
+        "shoes"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-029",
+      "name": "Classic Sandals",
+      "brand": "Sample Brand",
+      "category": "footwear",
+      "subcategory": "shoes",
+      "description": "Illustrative classic sandals for shoes, comfort, walking use cases.",
+      "price": 1358,
+      "original": 1520,
+      "currency": "INR",
+      "features": [
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "keywords": [
+        "classic",
+        "sandals",
+        "footwear",
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "categories": [
+        "footwear",
+        "shoes"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-030",
+      "name": "Trail Walking Shoes",
+      "brand": "Sample Brand",
+      "category": "footwear",
+      "subcategory": "shoes",
+      "description": "Illustrative trail walking shoes for shoes, comfort, walking use cases.",
+      "price": 1524,
+      "original": 1830,
+      "currency": "INR",
+      "features": [
+        "shoes",
+        "comfort",
+        "walking",
+        "active",
+        "style"
+      ],
+      "keywords": [
+        "trail",
+        "walking",
+        "shoes",
+        "footwear",
+        "comfort",
+        "active",
+        "style"
+      ],
+      "categories": [
+        "footwear",
+        "shoes"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-031",
+      "name": "RGB Gaming Mouse",
+      "brand": "Sample Brand",
+      "category": "gaming",
+      "subcategory": "gaming_peripherals",
+      "description": "Illustrative rgb gaming mouse for gaming, gameplay, pc use cases.",
+      "price": 1570,
+      "original": 1760,
+      "currency": "INR",
+      "features": [
+        "gaming",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "keywords": [
+        "rgb",
+        "gaming",
+        "mouse",
+        "peripherals",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "categories": [
+        "gaming",
+        "gaming_peripherals"
+      ],
+      "persona_tags": [
+        "gamer"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-032",
+      "name": "Mechanical Gaming Keyboard",
+      "brand": "Sample Brand",
+      "category": "gaming",
+      "subcategory": "gaming_peripherals",
+      "description": "Illustrative mechanical gaming keyboard for gaming, gameplay, pc use cases.",
+      "price": 1736,
+      "original": 2080,
+      "currency": "INR",
+      "features": [
+        "gaming",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "keywords": [
+        "mechanical",
+        "gaming",
+        "keyboard",
+        "peripherals",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "categories": [
+        "gaming",
+        "gaming_peripherals"
+      ],
+      "persona_tags": [
+        "gamer"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-033",
+      "name": "Gaming Controller",
+      "brand": "Sample Brand",
+      "category": "gaming",
+      "subcategory": "gaming_peripherals",
+      "description": "Illustrative gaming controller for gaming, gameplay, pc use cases.",
+      "price": 1902,
+      "original": 2430,
+      "currency": "INR",
+      "features": [
+        "gaming",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "keywords": [
+        "gaming",
+        "controller",
+        "peripherals",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "categories": [
+        "gaming",
+        "gaming_peripherals"
+      ],
+      "persona_tags": [
+        "gamer"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-034",
+      "name": "Laptop Cooling Pad",
+      "brand": "Sample Brand",
+      "category": "gaming",
+      "subcategory": "gaming_peripherals",
+      "description": "Illustrative laptop cooling pad for gaming, gameplay, pc use cases.",
+      "price": 2068,
+      "original": 2810,
+      "currency": "INR",
+      "features": [
+        "gaming",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "keywords": [
+        "laptop",
+        "cooling",
+        "pad",
+        "gaming",
+        "peripherals",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "categories": [
+        "gaming",
+        "gaming_peripherals"
+      ],
+      "persona_tags": [
+        "gamer"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-035",
+      "name": "Gaming Mouse Pad",
+      "brand": "Sample Brand",
+      "category": "gaming",
+      "subcategory": "gaming_peripherals",
+      "description": "Illustrative gaming mouse pad for gaming, gameplay, pc use cases.",
+      "price": 784,
+      "original": 880,
+      "currency": "INR",
+      "features": [
+        "gaming",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "keywords": [
+        "gaming",
+        "mouse",
+        "pad",
+        "peripherals",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "categories": [
+        "gaming",
+        "gaming_peripherals"
+      ],
+      "persona_tags": [
+        "gamer"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-036",
+      "name": "USB Gaming Microphone",
+      "brand": "Sample Brand",
+      "category": "gaming",
+      "subcategory": "gaming_peripherals",
+      "description": "Illustrative usb gaming microphone for gaming, gameplay, pc use cases.",
+      "price": 950,
+      "original": 1140,
+      "currency": "INR",
+      "features": [
+        "gaming",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "keywords": [
+        "usb",
+        "gaming",
+        "microphone",
+        "peripherals",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "categories": [
+        "gaming",
+        "gaming_peripherals"
+      ],
+      "persona_tags": [
+        "gamer"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-037",
+      "name": "Gaming Headset Stand",
+      "brand": "Sample Brand",
+      "category": "gaming",
+      "subcategory": "gaming_peripherals",
+      "description": "Illustrative gaming headset stand for gaming, gameplay, pc use cases.",
+      "price": 1116,
+      "original": 1430,
+      "currency": "INR",
+      "features": [
+        "gaming",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "keywords": [
+        "gaming",
+        "headset",
+        "stand",
+        "peripherals",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "categories": [
+        "gaming",
+        "gaming_peripherals"
+      ],
+      "persona_tags": [
+        "gamer"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-038",
+      "name": "Controller Charging Dock",
+      "brand": "Sample Brand",
+      "category": "gaming",
+      "subcategory": "gaming_peripherals",
+      "description": "Illustrative controller charging dock for gaming, gameplay, pc use cases.",
+      "price": 1282,
+      "original": 1740,
+      "currency": "INR",
+      "features": [
+        "gaming",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "keywords": [
+        "controller",
+        "charging",
+        "dock",
+        "gaming",
+        "peripherals",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "categories": [
+        "gaming",
+        "gaming_peripherals"
+      ],
+      "persona_tags": [
+        "gamer"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-039",
+      "name": "Gaming Desk Mat",
+      "brand": "Sample Brand",
+      "category": "gaming",
+      "subcategory": "gaming_peripherals",
+      "description": "Illustrative gaming desk mat for gaming, gameplay, pc use cases.",
+      "price": 1448,
+      "original": 1620,
+      "currency": "INR",
+      "features": [
+        "gaming",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "keywords": [
+        "gaming",
+        "desk",
+        "mat",
+        "peripherals",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "categories": [
+        "gaming",
+        "gaming_peripherals"
+      ],
+      "persona_tags": [
+        "gamer"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-040",
+      "name": "Wired Gaming Headset",
+      "brand": "Sample Brand",
+      "category": "gaming",
+      "subcategory": "gaming_peripherals",
+      "description": "Illustrative wired gaming headset for gaming, gameplay, pc use cases.",
+      "price": 1614,
+      "original": 1940,
+      "currency": "INR",
+      "features": [
+        "gaming",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "keywords": [
+        "wired",
+        "gaming",
+        "headset",
+        "peripherals",
+        "gameplay",
+        "pc",
+        "console",
+        "peripheral"
+      ],
+      "categories": [
+        "gaming",
+        "gaming_peripherals"
+      ],
+      "persona_tags": [
+        "gamer"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-041",
+      "name": "Wireless Headphones",
+      "brand": "Sample Brand",
+      "category": "audio",
+      "subcategory": "headphones_and_audio",
+      "description": "Illustrative wireless headphones for audio, music, sound use cases.",
+      "price": 1710,
+      "original": 1920,
+      "currency": "INR",
+      "features": [
+        "audio",
+        "music",
+        "sound",
+        "headphones",
+        "microphone"
+      ],
+      "keywords": [
+        "wireless",
+        "headphones",
+        "audio",
+        "and",
+        "music",
+        "sound",
+        "microphone"
+      ],
+      "categories": [
+        "audio",
+        "headphones_and_audio"
+      ],
+      "persona_tags": [
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-042",
+      "name": "Wired Earphones",
+      "brand": "Sample Brand",
+      "category": "audio",
+      "subcategory": "headphones_and_audio",
+      "description": "Illustrative wired earphones for audio, music, sound use cases.",
+      "price": 1876,
+      "original": 2250,
+      "currency": "INR",
+      "features": [
+        "audio",
+        "music",
+        "sound",
+        "headphones",
+        "microphone"
+      ],
+      "keywords": [
+        "wired",
+        "earphones",
+        "audio",
+        "headphones",
+        "and",
+        "music",
+        "sound",
+        "microphone"
+      ],
+      "categories": [
+        "audio",
+        "headphones_and_audio"
+      ],
+      "persona_tags": [
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-043",
+      "name": "Bluetooth Speaker",
+      "brand": "Sample Brand",
+      "category": "audio",
+      "subcategory": "headphones_and_audio",
+      "description": "Illustrative bluetooth speaker for audio, music, sound use cases.",
+      "price": 592,
+      "original": 760,
+      "currency": "INR",
+      "features": [
+        "audio",
+        "music",
+        "sound",
+        "headphones",
+        "microphone"
+      ],
+      "keywords": [
+        "bluetooth",
+        "speaker",
+        "audio",
+        "headphones",
+        "and",
+        "music",
+        "sound",
+        "microphone"
+      ],
+      "categories": [
+        "audio",
+        "headphones_and_audio"
+      ],
+      "persona_tags": [
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-044",
+      "name": "USB-C Earbuds",
+      "brand": "Sample Brand",
+      "category": "audio",
+      "subcategory": "headphones_and_audio",
+      "description": "Illustrative usb-c earbuds for audio, music, sound use cases.",
+      "price": 758,
+      "original": 1030,
+      "currency": "INR",
+      "features": [
+        "audio",
+        "music",
+        "sound",
+        "headphones",
+        "microphone"
+      ],
+      "keywords": [
+        "usbc",
+        "earbuds",
+        "audio",
+        "headphones",
+        "and",
+        "music",
+        "sound",
+        "microphone"
+      ],
+      "categories": [
+        "audio",
+        "headphones_and_audio"
+      ],
+      "persona_tags": [
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-045",
+      "name": "Over-Ear Headset",
+      "brand": "Sample Brand",
+      "category": "audio",
+      "subcategory": "headphones_and_audio",
+      "description": "Illustrative over-ear headset for audio, music, sound use cases.",
+      "price": 924,
+      "original": 1030,
+      "currency": "INR",
+      "features": [
+        "audio",
+        "music",
+        "sound",
+        "headphones",
+        "microphone"
+      ],
+      "keywords": [
+        "overear",
+        "headset",
+        "audio",
+        "headphones",
+        "and",
+        "music",
+        "sound",
+        "microphone"
+      ],
+      "categories": [
+        "audio",
+        "headphones_and_audio"
+      ],
+      "persona_tags": [
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-046",
+      "name": "Portable Audio Adapter",
+      "brand": "Sample Brand",
+      "category": "audio",
+      "subcategory": "headphones_and_audio",
+      "description": "Illustrative portable audio adapter for audio, music, sound use cases.",
+      "price": 1090,
+      "original": 1310,
+      "currency": "INR",
+      "features": [
+        "audio",
+        "music",
+        "sound",
+        "headphones",
+        "microphone"
+      ],
+      "keywords": [
+        "portable",
+        "audio",
+        "adapter",
+        "headphones",
+        "and",
+        "music",
+        "sound",
+        "microphone"
+      ],
+      "categories": [
+        "audio",
+        "headphones_and_audio"
+      ],
+      "persona_tags": [
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-047",
+      "name": "Desktop Speakers",
+      "brand": "Sample Brand",
+      "category": "audio",
+      "subcategory": "headphones_and_audio",
+      "description": "Illustrative desktop speakers for audio, music, sound use cases.",
+      "price": 1256,
+      "original": 1610,
+      "currency": "INR",
+      "features": [
+        "audio",
+        "music",
+        "sound",
+        "headphones",
+        "microphone"
+      ],
+      "keywords": [
+        "desktop",
+        "speakers",
+        "audio",
+        "headphones",
+        "and",
+        "music",
+        "sound",
+        "microphone"
+      ],
+      "categories": [
+        "audio",
+        "headphones_and_audio"
+      ],
+      "persona_tags": [
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-048",
+      "name": "Clip-on Microphone",
+      "brand": "Sample Brand",
+      "category": "audio",
+      "subcategory": "headphones_and_audio",
+      "description": "Illustrative clip-on microphone for audio, music, sound use cases.",
+      "price": 1422,
+      "original": 1930,
+      "currency": "INR",
+      "features": [
+        "audio",
+        "music",
+        "sound",
+        "headphones",
+        "microphone"
+      ],
+      "keywords": [
+        "clipon",
+        "microphone",
+        "audio",
+        "headphones",
+        "and",
+        "music",
+        "sound"
+      ],
+      "categories": [
+        "audio",
+        "headphones_and_audio"
+      ],
+      "persona_tags": [
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-049",
+      "name": "Podcast Microphone",
+      "brand": "Sample Brand",
+      "category": "audio",
+      "subcategory": "headphones_and_audio",
+      "description": "Illustrative podcast microphone for audio, music, sound use cases.",
+      "price": 1588,
+      "original": 1780,
+      "currency": "INR",
+      "features": [
+        "audio",
+        "music",
+        "sound",
+        "headphones",
+        "microphone"
+      ],
+      "keywords": [
+        "podcast",
+        "microphone",
+        "audio",
+        "headphones",
+        "and",
+        "music",
+        "sound"
+      ],
+      "categories": [
+        "audio",
+        "headphones_and_audio"
+      ],
+      "persona_tags": [
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-050",
+      "name": "Noise-isolating Earphones",
+      "brand": "Sample Brand",
+      "category": "audio",
+      "subcategory": "headphones_and_audio",
+      "description": "Illustrative noise-isolating earphones for audio, music, sound use cases.",
+      "price": 1754,
+      "original": 2100,
+      "currency": "INR",
+      "features": [
+        "audio",
+        "music",
+        "sound",
+        "headphones",
+        "microphone"
+      ],
+      "keywords": [
+        "noiseisolating",
+        "earphones",
+        "audio",
+        "headphones",
+        "and",
+        "music",
+        "sound",
+        "microphone"
+      ],
+      "categories": [
+        "audio",
+        "headphones_and_audio"
+      ],
+      "persona_tags": [
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-051",
+      "name": "Wireless Mouse",
+      "brand": "Sample Brand",
+      "category": "electronics",
+      "subcategory": "computer_accessories",
+      "description": "Illustrative wireless mouse for technology, computer, device use cases.",
+      "price": 650,
+      "original": 730,
+      "currency": "INR",
+      "features": [
+        "technology",
+        "computer",
+        "device",
+        "work",
+        "portable"
+      ],
+      "keywords": [
+        "wireless",
+        "mouse",
+        "electronics",
+        "computer",
+        "accessories",
+        "technology",
+        "device",
+        "work",
+        "portable"
+      ],
+      "categories": [
+        "electronics",
+        "computer_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-052",
+      "name": "USB-C Hub",
+      "brand": "Sample Brand",
+      "category": "electronics",
+      "subcategory": "computer_accessories",
+      "description": "Illustrative usb-c hub for technology, computer, device use cases.",
+      "price": 816,
+      "original": 980,
+      "currency": "INR",
+      "features": [
+        "technology",
+        "computer",
+        "device",
+        "work",
+        "portable"
+      ],
+      "keywords": [
+        "usbc",
+        "hub",
+        "electronics",
+        "computer",
+        "accessories",
+        "technology",
+        "device",
+        "work",
+        "portable"
+      ],
+      "categories": [
+        "electronics",
+        "computer_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-053",
+      "name": "Laptop Stand",
+      "brand": "Sample Brand",
+      "category": "electronics",
+      "subcategory": "computer_accessories",
+      "description": "Illustrative laptop stand for technology, computer, device use cases.",
+      "price": 982,
+      "original": 1260,
+      "currency": "INR",
+      "features": [
+        "technology",
+        "computer",
+        "device",
+        "work",
+        "portable"
+      ],
+      "keywords": [
+        "laptop",
+        "stand",
+        "electronics",
+        "computer",
+        "accessories",
+        "technology",
+        "device",
+        "work",
+        "portable"
+      ],
+      "categories": [
+        "electronics",
+        "computer_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-054",
+      "name": "Portable SSD Enclosure",
+      "brand": "Sample Brand",
+      "category": "electronics",
+      "subcategory": "computer_accessories",
+      "description": "Illustrative portable ssd enclosure for technology, computer, device use cases.",
+      "price": 1148,
+      "original": 1560,
+      "currency": "INR",
+      "features": [
+        "technology",
+        "computer",
+        "device",
+        "work",
+        "portable"
+      ],
+      "keywords": [
+        "portable",
+        "ssd",
+        "enclosure",
+        "electronics",
+        "computer",
+        "accessories",
+        "technology",
+        "device",
+        "work"
+      ],
+      "categories": [
+        "electronics",
+        "computer_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-055",
+      "name": "Webcam",
+      "brand": "Sample Brand",
+      "category": "electronics",
+      "subcategory": "computer_accessories",
+      "description": "Illustrative webcam for technology, computer, device use cases.",
+      "price": 1314,
+      "original": 1470,
+      "currency": "INR",
+      "features": [
+        "technology",
+        "computer",
+        "device",
+        "work",
+        "portable"
+      ],
+      "keywords": [
+        "webcam",
+        "electronics",
+        "computer",
+        "accessories",
+        "technology",
+        "device",
+        "work",
+        "portable"
+      ],
+      "categories": [
+        "electronics",
+        "computer_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-056",
+      "name": "Keyboard and Mouse Combo",
+      "brand": "Sample Brand",
+      "category": "electronics",
+      "subcategory": "computer_accessories",
+      "description": "Illustrative keyboard and mouse combo for technology, computer, device use cases.",
+      "price": 1480,
+      "original": 1780,
+      "currency": "INR",
+      "features": [
+        "technology",
+        "computer",
+        "device",
+        "work",
+        "portable"
+      ],
+      "keywords": [
+        "keyboard",
+        "and",
+        "mouse",
+        "combo",
+        "electronics",
+        "computer",
+        "accessories",
+        "technology",
+        "device",
+        "work",
+        "portable"
+      ],
+      "categories": [
+        "electronics",
+        "computer_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-057",
+      "name": "USB Desk Light",
+      "brand": "Sample Brand",
+      "category": "electronics",
+      "subcategory": "computer_accessories",
+      "description": "Illustrative usb desk light for technology, computer, device use cases.",
+      "price": 1646,
+      "original": 2110,
+      "currency": "INR",
+      "features": [
+        "technology",
+        "computer",
+        "device",
+        "work",
+        "portable"
+      ],
+      "keywords": [
+        "usb",
+        "desk",
+        "light",
+        "electronics",
+        "computer",
+        "accessories",
+        "technology",
+        "device",
+        "work",
+        "portable"
+      ],
+      "categories": [
+        "electronics",
+        "computer_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-058",
+      "name": "Laptop Cleaning Kit",
+      "brand": "Sample Brand",
+      "category": "electronics",
+      "subcategory": "computer_accessories",
+      "description": "Illustrative laptop cleaning kit for technology, computer, device use cases.",
+      "price": 1812,
+      "original": 2460,
+      "currency": "INR",
+      "features": [
+        "technology",
+        "computer",
+        "device",
+        "work",
+        "portable"
+      ],
+      "keywords": [
+        "laptop",
+        "cleaning",
+        "kit",
+        "electronics",
+        "computer",
+        "accessories",
+        "technology",
+        "device",
+        "work",
+        "portable"
+      ],
+      "categories": [
+        "electronics",
+        "computer_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-059",
+      "name": "HDMI Adapter",
+      "brand": "Sample Brand",
+      "category": "electronics",
+      "subcategory": "computer_accessories",
+      "description": "Illustrative hdmi adapter for technology, computer, device use cases.",
+      "price": 1978,
+      "original": 2220,
+      "currency": "INR",
+      "features": [
+        "technology",
+        "computer",
+        "device",
+        "work",
+        "portable"
+      ],
+      "keywords": [
+        "hdmi",
+        "adapter",
+        "electronics",
+        "computer",
+        "accessories",
+        "technology",
+        "device",
+        "work",
+        "portable"
+      ],
+      "categories": [
+        "electronics",
+        "computer_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-060",
+      "name": "Compact Power Bank",
+      "brand": "Sample Brand",
+      "category": "electronics",
+      "subcategory": "computer_accessories",
+      "description": "Illustrative compact power bank for technology, computer, device use cases.",
+      "price": 694,
+      "original": 830,
+      "currency": "INR",
+      "features": [
+        "technology",
+        "computer",
+        "device",
+        "work",
+        "portable"
+      ],
+      "keywords": [
+        "compact",
+        "power",
+        "bank",
+        "electronics",
+        "computer",
+        "accessories",
+        "technology",
+        "device",
+        "work",
+        "portable"
+      ],
+      "categories": [
+        "electronics",
+        "computer_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-061",
+      "name": "Smart LED Strip",
+      "brand": "Sample Brand",
+      "category": "gadgets",
+      "subcategory": "smart_accessories",
+      "description": "Illustrative smart led strip for gadget, smart, technology use cases.",
+      "price": 790,
+      "original": 880,
+      "currency": "INR",
+      "features": [
+        "gadget",
+        "smart",
+        "technology",
+        "device",
+        "home"
+      ],
+      "keywords": [
+        "smart",
+        "led",
+        "strip",
+        "gadgets",
+        "accessories",
+        "gadget",
+        "technology",
+        "device",
+        "home"
+      ],
+      "categories": [
+        "gadgets",
+        "smart_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-062",
+      "name": "Digital Desk Clock",
+      "brand": "Sample Brand",
+      "category": "gadgets",
+      "subcategory": "smart_accessories",
+      "description": "Illustrative digital desk clock for gadget, smart, technology use cases.",
+      "price": 956,
+      "original": 1150,
+      "currency": "INR",
+      "features": [
+        "gadget",
+        "smart",
+        "technology",
+        "device",
+        "home"
+      ],
+      "keywords": [
+        "digital",
+        "desk",
+        "clock",
+        "gadgets",
+        "smart",
+        "accessories",
+        "gadget",
+        "technology",
+        "device",
+        "home"
+      ],
+      "categories": [
+        "gadgets",
+        "smart_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-063",
+      "name": "Rechargeable Mini Fan",
+      "brand": "Sample Brand",
+      "category": "gadgets",
+      "subcategory": "smart_accessories",
+      "description": "Illustrative rechargeable mini fan for gadget, smart, technology use cases.",
+      "price": 1122,
+      "original": 1440,
+      "currency": "INR",
+      "features": [
+        "gadget",
+        "smart",
+        "technology",
+        "device",
+        "home"
+      ],
+      "keywords": [
+        "rechargeable",
+        "mini",
+        "fan",
+        "gadgets",
+        "smart",
+        "accessories",
+        "gadget",
+        "technology",
+        "device",
+        "home"
+      ],
+      "categories": [
+        "gadgets",
+        "smart_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-064",
+      "name": "Bluetooth Tracker",
+      "brand": "Sample Brand",
+      "category": "gadgets",
+      "subcategory": "smart_accessories",
+      "description": "Illustrative bluetooth tracker for gadget, smart, technology use cases.",
+      "price": 1288,
+      "original": 1750,
+      "currency": "INR",
+      "features": [
+        "gadget",
+        "smart",
+        "technology",
+        "device",
+        "home"
+      ],
+      "keywords": [
+        "bluetooth",
+        "tracker",
+        "gadgets",
+        "smart",
+        "accessories",
+        "gadget",
+        "technology",
+        "device",
+        "home"
+      ],
+      "categories": [
+        "gadgets",
+        "smart_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-065",
+      "name": "Portable Phone Stand",
+      "brand": "Sample Brand",
+      "category": "gadgets",
+      "subcategory": "smart_accessories",
+      "description": "Illustrative portable phone stand for gadget, smart, technology use cases.",
+      "price": 1454,
+      "original": 1630,
+      "currency": "INR",
+      "features": [
+        "gadget",
+        "smart",
+        "technology",
+        "device",
+        "home"
+      ],
+      "keywords": [
+        "portable",
+        "phone",
+        "stand",
+        "gadgets",
+        "smart",
+        "accessories",
+        "gadget",
+        "technology",
+        "device",
+        "home"
+      ],
+      "categories": [
+        "gadgets",
+        "smart_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-066",
+      "name": "Smart Plug",
+      "brand": "Sample Brand",
+      "category": "gadgets",
+      "subcategory": "smart_accessories",
+      "description": "Illustrative smart plug for gadget, smart, technology use cases.",
+      "price": 1620,
+      "original": 1940,
+      "currency": "INR",
+      "features": [
+        "gadget",
+        "smart",
+        "technology",
+        "device",
+        "home"
+      ],
+      "keywords": [
+        "smart",
+        "plug",
+        "gadgets",
+        "accessories",
+        "gadget",
+        "technology",
+        "device",
+        "home"
+      ],
+      "categories": [
+        "gadgets",
+        "smart_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-067",
+      "name": "LED Reading Light",
+      "brand": "Sample Brand",
+      "category": "gadgets",
+      "subcategory": "smart_accessories",
+      "description": "Illustrative led reading light for gadget, smart, technology use cases.",
+      "price": 1786,
+      "original": 2290,
+      "currency": "INR",
+      "features": [
+        "gadget",
+        "smart",
+        "technology",
+        "device",
+        "home"
+      ],
+      "keywords": [
+        "led",
+        "reading",
+        "light",
+        "gadgets",
+        "smart",
+        "accessories",
+        "gadget",
+        "technology",
+        "device",
+        "home"
+      ],
+      "categories": [
+        "gadgets",
+        "smart_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-068",
+      "name": "Mini Projector Stand",
+      "brand": "Sample Brand",
+      "category": "gadgets",
+      "subcategory": "smart_accessories",
+      "description": "Illustrative mini projector stand for gadget, smart, technology use cases.",
+      "price": 502,
+      "original": 680,
+      "currency": "INR",
+      "features": [
+        "gadget",
+        "smart",
+        "technology",
+        "device",
+        "home"
+      ],
+      "keywords": [
+        "mini",
+        "projector",
+        "stand",
+        "gadgets",
+        "smart",
+        "accessories",
+        "gadget",
+        "technology",
+        "device",
+        "home"
+      ],
+      "categories": [
+        "gadgets",
+        "smart_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-069",
+      "name": "Cable Organizer Kit",
+      "brand": "Sample Brand",
+      "category": "gadgets",
+      "subcategory": "smart_accessories",
+      "description": "Illustrative cable organizer kit for gadget, smart, technology use cases.",
+      "price": 668,
+      "original": 750,
+      "currency": "INR",
+      "features": [
+        "gadget",
+        "smart",
+        "technology",
+        "device",
+        "home"
+      ],
+      "keywords": [
+        "cable",
+        "organizer",
+        "kit",
+        "gadgets",
+        "smart",
+        "accessories",
+        "gadget",
+        "technology",
+        "device",
+        "home"
+      ],
+      "categories": [
+        "gadgets",
+        "smart_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-070",
+      "name": "Rechargeable Desk Lamp",
+      "brand": "Sample Brand",
+      "category": "gadgets",
+      "subcategory": "smart_accessories",
+      "description": "Illustrative rechargeable desk lamp for gadget, smart, technology use cases.",
+      "price": 834,
+      "original": 1000,
+      "currency": "INR",
+      "features": [
+        "gadget",
+        "smart",
+        "technology",
+        "device",
+        "home"
+      ],
+      "keywords": [
+        "rechargeable",
+        "desk",
+        "lamp",
+        "gadgets",
+        "smart",
+        "accessories",
+        "gadget",
+        "technology",
+        "device",
+        "home"
+      ],
+      "categories": [
+        "gadgets",
+        "smart_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "gamer",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-071",
+      "name": "Minimal Wallet",
+      "brand": "Sample Brand",
+      "category": "accessories",
+      "subcategory": "everyday_accessories",
+      "description": "Illustrative minimal wallet for accessory, daily, travel use cases.",
+      "price": 930,
+      "original": 1040,
+      "currency": "INR",
+      "features": [
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "keywords": [
+        "minimal",
+        "wallet",
+        "accessories",
+        "everyday",
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "categories": [
+        "accessories",
+        "everyday_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-072",
+      "name": "Canvas Backpack",
+      "brand": "Sample Brand",
+      "category": "accessories",
+      "subcategory": "everyday_accessories",
+      "description": "Illustrative canvas backpack for accessory, daily, travel use cases.",
+      "price": 1096,
+      "original": 1320,
+      "currency": "INR",
+      "features": [
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "keywords": [
+        "canvas",
+        "backpack",
+        "accessories",
+        "everyday",
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "categories": [
+        "accessories",
+        "everyday_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-073",
+      "name": "Travel Organizer Pouch",
+      "brand": "Sample Brand",
+      "category": "accessories",
+      "subcategory": "everyday_accessories",
+      "description": "Illustrative travel organizer pouch for accessory, daily, travel use cases.",
+      "price": 1262,
+      "original": 1620,
+      "currency": "INR",
+      "features": [
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "keywords": [
+        "travel",
+        "organizer",
+        "pouch",
+        "accessories",
+        "everyday",
+        "accessory",
+        "daily",
+        "carry",
+        "style"
+      ],
+      "categories": [
+        "accessories",
+        "everyday_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-074",
+      "name": "Card Holder",
+      "brand": "Sample Brand",
+      "category": "accessories",
+      "subcategory": "everyday_accessories",
+      "description": "Illustrative card holder for accessory, daily, travel use cases.",
+      "price": 1428,
+      "original": 1940,
+      "currency": "INR",
+      "features": [
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "keywords": [
+        "card",
+        "holder",
+        "accessories",
+        "everyday",
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "categories": [
+        "accessories",
+        "everyday_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-075",
+      "name": "Laptop Backpack",
+      "brand": "Sample Brand",
+      "category": "accessories",
+      "subcategory": "everyday_accessories",
+      "description": "Illustrative laptop backpack for accessory, daily, travel use cases.",
+      "price": 1594,
+      "original": 1790,
+      "currency": "INR",
+      "features": [
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "keywords": [
+        "laptop",
+        "backpack",
+        "accessories",
+        "everyday",
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "categories": [
+        "accessories",
+        "everyday_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-076",
+      "name": "Keychain Set",
+      "brand": "Sample Brand",
+      "category": "accessories",
+      "subcategory": "everyday_accessories",
+      "description": "Illustrative keychain set for accessory, daily, travel use cases.",
+      "price": 1760,
+      "original": 2110,
+      "currency": "INR",
+      "features": [
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "keywords": [
+        "keychain",
+        "set",
+        "accessories",
+        "everyday",
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "categories": [
+        "accessories",
+        "everyday_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-077",
+      "name": "Crossbody Sling Bag",
+      "brand": "Sample Brand",
+      "category": "accessories",
+      "subcategory": "everyday_accessories",
+      "description": "Illustrative crossbody sling bag for accessory, daily, travel use cases.",
+      "price": 476,
+      "original": 610,
+      "currency": "INR",
+      "features": [
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "keywords": [
+        "crossbody",
+        "sling",
+        "bag",
+        "accessories",
+        "everyday",
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "categories": [
+        "accessories",
+        "everyday_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-078",
+      "name": "Compact Umbrella",
+      "brand": "Sample Brand",
+      "category": "accessories",
+      "subcategory": "everyday_accessories",
+      "description": "Illustrative compact umbrella for accessory, daily, travel use cases.",
+      "price": 642,
+      "original": 870,
+      "currency": "INR",
+      "features": [
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "keywords": [
+        "compact",
+        "umbrella",
+        "accessories",
+        "everyday",
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "categories": [
+        "accessories",
+        "everyday_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-079",
+      "name": "Watch Strap",
+      "brand": "Sample Brand",
+      "category": "accessories",
+      "subcategory": "everyday_accessories",
+      "description": "Illustrative watch strap for accessory, daily, travel use cases.",
+      "price": 808,
+      "original": 900,
+      "currency": "INR",
+      "features": [
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "keywords": [
+        "watch",
+        "strap",
+        "accessories",
+        "everyday",
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "categories": [
+        "accessories",
+        "everyday_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-080",
+      "name": "Reusable Tote Bag",
+      "brand": "Sample Brand",
+      "category": "accessories",
+      "subcategory": "everyday_accessories",
+      "description": "Illustrative reusable tote bag for accessory, daily, travel use cases.",
+      "price": 974,
+      "original": 1170,
+      "currency": "INR",
+      "features": [
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "keywords": [
+        "reusable",
+        "tote",
+        "bag",
+        "accessories",
+        "everyday",
+        "accessory",
+        "daily",
+        "travel",
+        "carry",
+        "style"
+      ],
+      "categories": [
+        "accessories",
+        "everyday_accessories"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-081",
+      "name": "Yoga Mat",
+      "brand": "Sample Brand",
+      "category": "fitness",
+      "subcategory": "fitness_gear",
+      "description": "Illustrative yoga mat for fitness, workout, exercise use cases.",
+      "price": 1270,
+      "original": 1420,
+      "currency": "INR",
+      "features": [
+        "fitness",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "keywords": [
+        "yoga",
+        "mat",
+        "fitness",
+        "gear",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "categories": [
+        "fitness",
+        "fitness_gear"
+      ],
+      "persona_tags": [
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-082",
+      "name": "Resistance Band Set",
+      "brand": "Sample Brand",
+      "category": "fitness",
+      "subcategory": "fitness_gear",
+      "description": "Illustrative resistance band set for fitness, workout, exercise use cases.",
+      "price": 1436,
+      "original": 1720,
+      "currency": "INR",
+      "features": [
+        "fitness",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "keywords": [
+        "resistance",
+        "band",
+        "set",
+        "fitness",
+        "gear",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "categories": [
+        "fitness",
+        "fitness_gear"
+      ],
+      "persona_tags": [
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-083",
+      "name": "Skipping Rope",
+      "brand": "Sample Brand",
+      "category": "fitness",
+      "subcategory": "fitness_gear",
+      "description": "Illustrative skipping rope for fitness, workout, exercise use cases.",
+      "price": 1602,
+      "original": 2050,
+      "currency": "INR",
+      "features": [
+        "fitness",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "keywords": [
+        "skipping",
+        "rope",
+        "fitness",
+        "gear",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "categories": [
+        "fitness",
+        "fitness_gear"
+      ],
+      "persona_tags": [
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-084",
+      "name": "Adjustable Hand Gripper",
+      "brand": "Sample Brand",
+      "category": "fitness",
+      "subcategory": "fitness_gear",
+      "description": "Illustrative adjustable hand gripper for fitness, workout, exercise use cases.",
+      "price": 1768,
+      "original": 2400,
+      "currency": "INR",
+      "features": [
+        "fitness",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "keywords": [
+        "adjustable",
+        "hand",
+        "gripper",
+        "fitness",
+        "gear",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "categories": [
+        "fitness",
+        "fitness_gear"
+      ],
+      "persona_tags": [
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-085",
+      "name": "Workout Gloves",
+      "brand": "Sample Brand",
+      "category": "fitness",
+      "subcategory": "fitness_gear",
+      "description": "Illustrative workout gloves for fitness, workout, exercise use cases.",
+      "price": 484,
+      "original": 540,
+      "currency": "INR",
+      "features": [
+        "fitness",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "keywords": [
+        "workout",
+        "gloves",
+        "fitness",
+        "gear",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "categories": [
+        "fitness",
+        "fitness_gear"
+      ],
+      "persona_tags": [
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-086",
+      "name": "Foam Roller",
+      "brand": "Sample Brand",
+      "category": "fitness",
+      "subcategory": "fitness_gear",
+      "description": "Illustrative foam roller for fitness, workout, exercise use cases.",
+      "price": 650,
+      "original": 780,
+      "currency": "INR",
+      "features": [
+        "fitness",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "keywords": [
+        "foam",
+        "roller",
+        "fitness",
+        "gear",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "categories": [
+        "fitness",
+        "fitness_gear"
+      ],
+      "persona_tags": [
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-087",
+      "name": "Sports Water Bottle",
+      "brand": "Sample Brand",
+      "category": "fitness",
+      "subcategory": "fitness_gear",
+      "description": "Illustrative sports water bottle for fitness, workout, exercise use cases.",
+      "price": 816,
+      "original": 1040,
+      "currency": "INR",
+      "features": [
+        "fitness",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "keywords": [
+        "sports",
+        "water",
+        "bottle",
+        "fitness",
+        "gear",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "categories": [
+        "fitness",
+        "fitness_gear"
+      ],
+      "persona_tags": [
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-088",
+      "name": "Exercise Mat",
+      "brand": "Sample Brand",
+      "category": "fitness",
+      "subcategory": "fitness_gear",
+      "description": "Illustrative exercise mat for fitness, workout, exercise use cases.",
+      "price": 982,
+      "original": 1340,
+      "currency": "INR",
+      "features": [
+        "fitness",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "keywords": [
+        "exercise",
+        "mat",
+        "fitness",
+        "gear",
+        "workout",
+        "training",
+        "active"
+      ],
+      "categories": [
+        "fitness",
+        "fitness_gear"
+      ],
+      "persona_tags": [
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-089",
+      "name": "Ankle Support Pair",
+      "brand": "Sample Brand",
+      "category": "fitness",
+      "subcategory": "fitness_gear",
+      "description": "Illustrative ankle support pair for fitness, workout, exercise use cases.",
+      "price": 1148,
+      "original": 1290,
+      "currency": "INR",
+      "features": [
+        "fitness",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "keywords": [
+        "ankle",
+        "support",
+        "pair",
+        "fitness",
+        "gear",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "categories": [
+        "fitness",
+        "fitness_gear"
+      ],
+      "persona_tags": [
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-090",
+      "name": "Training Towel Set",
+      "brand": "Sample Brand",
+      "category": "fitness",
+      "subcategory": "fitness_gear",
+      "description": "Illustrative training towel set for fitness, workout, exercise use cases.",
+      "price": 1314,
+      "original": 1580,
+      "currency": "INR",
+      "features": [
+        "fitness",
+        "workout",
+        "exercise",
+        "training",
+        "active"
+      ],
+      "keywords": [
+        "training",
+        "towel",
+        "set",
+        "fitness",
+        "gear",
+        "workout",
+        "exercise",
+        "active"
+      ],
+      "categories": [
+        "fitness",
+        "fitness_gear"
+      ],
+      "persona_tags": [
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-091",
+      "name": "Desk Storage Rack",
+      "brand": "Sample Brand",
+      "category": "home",
+      "subcategory": "home_and_desk",
+      "description": "Illustrative desk storage rack for home, desk, organizer use cases.",
+      "price": 1610,
+      "original": 1800,
+      "currency": "INR",
+      "features": [
+        "home",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "keywords": [
+        "desk",
+        "storage",
+        "rack",
+        "home",
+        "and",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "categories": [
+        "home",
+        "home_and_desk"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-092",
+      "name": "Foldable Laptop Table",
+      "brand": "Sample Brand",
+      "category": "home",
+      "subcategory": "home_and_desk",
+      "description": "Illustrative foldable laptop table for home, desk, organizer use cases.",
+      "price": 1776,
+      "original": 2130,
+      "currency": "INR",
+      "features": [
+        "home",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "keywords": [
+        "foldable",
+        "laptop",
+        "table",
+        "home",
+        "and",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "categories": [
+        "home",
+        "home_and_desk"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-093",
+      "name": "Cushion Set",
+      "brand": "Sample Brand",
+      "category": "home",
+      "subcategory": "home_and_desk",
+      "description": "Illustrative cushion set for home, desk, organizer use cases.",
+      "price": 492,
+      "original": 630,
+      "currency": "INR",
+      "features": [
+        "home",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "keywords": [
+        "cushion",
+        "set",
+        "home",
+        "and",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "categories": [
+        "home",
+        "home_and_desk"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-094",
+      "name": "Laundry Organizer",
+      "brand": "Sample Brand",
+      "category": "home",
+      "subcategory": "home_and_desk",
+      "description": "Illustrative laundry organizer for home, desk, organizer use cases.",
+      "price": 658,
+      "original": 890,
+      "currency": "INR",
+      "features": [
+        "home",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "keywords": [
+        "laundry",
+        "organizer",
+        "home",
+        "and",
+        "desk",
+        "everyday",
+        "utility"
+      ],
+      "categories": [
+        "home",
+        "home_and_desk"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-095",
+      "name": "Bedside Organizer",
+      "brand": "Sample Brand",
+      "category": "home",
+      "subcategory": "home_and_desk",
+      "description": "Illustrative bedside organizer for home, desk, organizer use cases.",
+      "price": 824,
+      "original": 920,
+      "currency": "INR",
+      "features": [
+        "home",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "keywords": [
+        "bedside",
+        "organizer",
+        "home",
+        "and",
+        "desk",
+        "everyday",
+        "utility"
+      ],
+      "categories": [
+        "home",
+        "home_and_desk"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-096",
+      "name": "Study Chair Cushion",
+      "brand": "Sample Brand",
+      "category": "home",
+      "subcategory": "home_and_desk",
+      "description": "Illustrative study chair cushion for home, desk, organizer use cases.",
+      "price": 990,
+      "original": 1190,
+      "currency": "INR",
+      "features": [
+        "home",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "keywords": [
+        "study",
+        "chair",
+        "cushion",
+        "home",
+        "and",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "categories": [
+        "home",
+        "home_and_desk"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-097",
+      "name": "Storage Basket Set",
+      "brand": "Sample Brand",
+      "category": "home",
+      "subcategory": "home_and_desk",
+      "description": "Illustrative storage basket set for home, desk, organizer use cases.",
+      "price": 1156,
+      "original": 1480,
+      "currency": "INR",
+      "features": [
+        "home",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "keywords": [
+        "storage",
+        "basket",
+        "set",
+        "home",
+        "and",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "categories": [
+        "home",
+        "home_and_desk"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-098",
+      "name": "Compact Table Lamp",
+      "brand": "Sample Brand",
+      "category": "home",
+      "subcategory": "home_and_desk",
+      "description": "Illustrative compact table lamp for home, desk, organizer use cases.",
+      "price": 1322,
+      "original": 1800,
+      "currency": "INR",
+      "features": [
+        "home",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "keywords": [
+        "compact",
+        "table",
+        "lamp",
+        "home",
+        "and",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "categories": [
+        "home",
+        "home_and_desk"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-099",
+      "name": "Drawer Organizer",
+      "brand": "Sample Brand",
+      "category": "home",
+      "subcategory": "home_and_desk",
+      "description": "Illustrative drawer organizer for home, desk, organizer use cases.",
+      "price": 1488,
+      "original": 1670,
+      "currency": "INR",
+      "features": [
+        "home",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "keywords": [
+        "drawer",
+        "organizer",
+        "home",
+        "and",
+        "desk",
+        "everyday",
+        "utility"
+      ],
+      "categories": [
+        "home",
+        "home_and_desk"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    },
+    {
+      "id": "SAMPLE-100",
+      "name": "Insulated Lunch Box",
+      "brand": "Sample Brand",
+      "category": "home",
+      "subcategory": "home_and_desk",
+      "description": "Illustrative insulated lunch box for home, desk, organizer use cases.",
+      "price": 1654,
+      "original": 1980,
+      "currency": "INR",
+      "features": [
+        "home",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "keywords": [
+        "insulated",
+        "lunch",
+        "box",
+        "home",
+        "and",
+        "desk",
+        "organizer",
+        "everyday",
+        "utility"
+      ],
+      "categories": [
+        "home",
+        "home_and_desk"
+      ],
+      "persona_tags": [
+        "student",
+        "shopper"
+      ],
+      "seller": "AakankshLabs Sample Catalogue",
+      "availability": "sample_only",
+      "product_url": null,
+      "data_note": "Synthetic portfolio sample. Not a real listing, seller, price, or availability claim."
+    }
+  ]
+}
