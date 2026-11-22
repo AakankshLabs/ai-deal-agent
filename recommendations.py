@@ -78,15 +78,26 @@ def tokenize(text):
     return TOKEN_PATTERN.findall(str(text).lower())
 
 
+def _singularize_token(token):
+    """Normalize common English plural forms for catalogue/query matching."""
+    if len(token) > 4 and token.endswith("ies"):
+        return token[:-3] + "y"
+    if len(token) > 4 and token.endswith(("ches", "shes", "xes", "zes", "sses")):
+        return token[:-2]
+    if len(token) > 3 and token.endswith("s") and not token.endswith(("ss", "us", "is")):
+        return token[:-1]
+    return token
+
+
 def _expanded_query_tokens(query_tokens):
-    """Return synonym-aware alternatives for each original query token."""
+    """Return singularized, synonym-aware alternatives for each query token."""
     groups_by_token = {
-        token: group
+        _singularize_token(token): {_singularize_token(item) for item in group}
         for group in SYNONYM_GROUPS
         for token in group
     }
     return {
-        token: groups_by_token.get(token, {token})
+        token: groups_by_token.get(_singularize_token(token), {_singularize_token(token)})
         for token in query_tokens
     }
 
@@ -119,7 +130,7 @@ def recommend_products(products, query, budget, persona_name=None):
             + product.get("keywords", [])
             + product.get("features", [])
         )
-        product_tokens = set(tokenize(searchable_text))
+        product_tokens = {_singularize_token(token) for token in tokenize(searchable_text)}
         matched_terms = [
             token
             for token, alternatives in expanded_tokens.items()
@@ -133,8 +144,10 @@ def recommend_products(products, query, budget, persona_name=None):
             continue
 
         relevance = len(matched_terms) / len(query_tokens)
-        normalized_query = " ".join(query_tokens)
-        normalized_name = " ".join(tokenize(product.get("name", "")))
+        normalized_query = " ".join(_singularize_token(token) for token in query_tokens)
+        normalized_name = " ".join(
+            _singularize_token(token) for token in tokenize(product.get("name", ""))
+        )
         exact_name_match = normalized_query in normalized_name
 
         budget_fit = max(0.0, min(1.0, (budget - price) / budget))
