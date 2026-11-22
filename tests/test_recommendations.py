@@ -51,6 +51,52 @@ class RecommendationTests(unittest.TestCase):
         results = recommend_products(SAMPLE_PRODUCTS, "shirt", 1500)
         self.assertEqual([item["name"] for item in results], ["Casual Shirt"])
 
+    def test_multiword_query_requires_every_search_term(self):
+        products = [
+            {
+                "name": "Gaming Mouse Pad",
+                "price": 700,
+                "original": 900,
+                "keywords": ["gaming", "mouse", "pad"],
+                "categories": ["gaming"],
+                "persona_tags": ["gamer"],
+            },
+            {
+                "name": "Mechanical Gaming Keyboard",
+                "price": 1800,
+                "original": 2200,
+                "keywords": ["mechanical", "gaming", "keyboard"],
+                "categories": ["gaming"],
+                "persona_tags": ["gamer"],
+            },
+        ]
+
+        # A partial "gaming" match must not qualify for "gaming keyboard".
+        results = recommend_products(products, "gaming keyboard", 1000)
+        self.assertEqual(results, [])
+
+        # The exact product is returned when it is within budget.
+        results = recommend_products(products, "gaming keyboard", 2000)
+        self.assertEqual(
+            [item["name"] for item in results],
+            ["Mechanical Gaming Keyboard"],
+        )
+
+    def test_synonyms_still_work_with_multiword_queries(self):
+        products = [
+            {
+                "name": "Gaming Headset",
+                "price": 1500,
+                "original": 1800,
+                "keywords": ["gaming", "headphones", "audio"],
+                "categories": ["gaming", "audio"],
+                "persona_tags": ["gamer"],
+            }
+        ]
+        results = recommend_products(products, "gaming headphones", 2000)
+        self.assertEqual([item["name"] for item in results], ["Gaming Headset"])
+
+
     def test_relevant_results_are_ranked_and_explained(self):
         results = recommend_products(SAMPLE_PRODUCTS, "shirt", 3000)
         self.assertEqual(results[0]["name"], "Casual Shirt")
