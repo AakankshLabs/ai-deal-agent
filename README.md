@@ -42,10 +42,11 @@ The recommendation logic lives in `recommendations.py`, separate from the Stream
 1. Normalize the search query into lowercase tokens.
 2. Expand known synonyms.
 3. Exclude products outside the selected budget.
-4. Calculate query relevance from matched terms.
-5. Compare product categories and audience tags with the selected persona.
-6. Combine relevance, persona fit, budget fit, and illustrative discount into a transparent score.
-7. Return ranked products with human-readable explanations.
+4. Require every query term to match directly or through its synonym group, preventing partial multi-word matches (for example, a mouse pad is not returned for “gaming keyboard”).
+5. Calculate query relevance from matched terms.
+6. Compare product categories and audience tags with the selected persona.
+7. Combine relevance, persona fit, budget fit, and illustrative discount into a transparent score.
+8. Return ranked products with human-readable explanations.
 
 For persona-aware searches, the heuristic score is:
 
