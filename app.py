@@ -1,5 +1,7 @@
 import streamlit as st
 
+from recommendations import recommend_products
+
 # Page configuration
 st.set_page_config(
     page_title="AI Deal Discovery & Marketing Agent",
@@ -10,14 +12,23 @@ st.set_page_config(
 st.title("🛍️ AI Deal Discovery & Marketing Agent")
 st.write("Explore sample product deals using a search query and budget.")
 st.caption(
-    "Portfolio prototype: matching is rule-based and all catalogue data is illustrative. "
-    "No live retailer prices or inventory are connected."
+    "Portfolio prototype: recommendations use transparent, rule-based scoring "
+    "on illustrative catalogue data. No live retailer prices or inventory are connected."
 )
 
 # Shopper inputs
 user_type = st.selectbox("Audience segment", ["student", "gamer", "shopper"])
-product_input = st.text_input("What product are you looking for?", placeholder="e.g. shirt, shoes, gaming")
-budget = st.slider("Maximum budget (₹)", min_value=500, max_value=5000, value=3000, step=100)
+product_input = st.text_input(
+    "What product are you looking for?",
+    placeholder="e.g. shirt, sneakers, headphones",
+)
+budget = st.slider(
+    "Maximum budget (₹)",
+    min_value=500,
+    max_value=5000,
+    value=3000,
+    step=100,
+)
 
 # Illustrative sample catalogue
 products = [
@@ -63,21 +74,14 @@ products = [
     },
 ]
 
-if st.button("🚀 Generate sample deals", type="primary"):
-    query = product_input.strip().lower()
-
-    if not query:
+if st.button("🚀 Find recommended deals", type="primary"):
+    if not product_input.strip():
         st.warning("Enter a product or category to search.")
     else:
-        results = [
-            product
-            for product in products
-            if product["price"] <= budget
-            and any(keyword in query for keyword in product["keywords"])
-        ]
+        results = recommend_products(products, product_input, budget)
 
         if results:
-            st.success(f"Found {len(results)} matching sample deal(s).")
+            st.success(f"Found {len(results)} matching sample deal(s), ranked by match score.")
 
             for product in results:
                 discount = round(
@@ -99,9 +103,12 @@ if st.button("🚀 Generate sample deals", type="primary"):
                         f"(₹{product['original']:,} → ₹{product['price']:,})"
                     )
                     st.write(f"**Estimated savings:** ₹{savings:,}")
-                    st.caption(f"Matched query “{product_input}” within a ₹{budget:,} budget.")
+                    st.metric("Recommendation match score", f"{product['recommendation_score']}%")
+                    st.caption("Why this appeared")
+                    for reason in product["recommendation_reasons"]:
+                        st.write(f"- {reason}")
 
-            # Template-based marketing copy for the first match
+            # Template-based marketing copy for the highest-ranked match
             best = results[0]
             st.divider()
             st.subheader("📣 Marketing copy examples")
@@ -114,11 +121,15 @@ if st.button("🚀 Generate sample deals", type="primary"):
             st.subheader("📊 Audience context")
             st.write(
                 f"This search was run with the **{user_type}** audience segment selected. "
-                "In this prototype, the segment is shown as context and does not yet alter results."
+                "The segment is currently recorded as context and does not yet change ranking."
+            )
+            st.caption(
+                "Score is a rule-based indicator combining query relevance (75%), "
+                "budget fit (15%), and illustrative discount (10%). It is not an AI confidence score."
             )
         else:
             st.info(
-                "No sample products matched both the query and budget. "
-                "Try a keyword such as shirt, shoes, gaming, gadget, or tech, "
+                "No sample products matched both the search and budget. "
+                "Try shirt, shoes, sneakers, gaming, headphones, gadget, or tech, "
                 "or increase your budget."
             )
