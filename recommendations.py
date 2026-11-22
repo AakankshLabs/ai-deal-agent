@@ -180,6 +180,25 @@ def recommend_products(products, query, budget, persona_name=None):
         result["recommendation_score"] = round(score * 100)
         result["recommendation_reasons"] = reasons
         result["persona_fit"] = persona_fit
+        if persona:
+            components = {
+                "Query relevance (60%)": 0.60 * relevance,
+                "Persona fit (20%)": 0.20 * persona_fit,
+                "Budget fit (12%)": 0.12 * budget_fit,
+                "Illustrative discount (8%)": 0.08 * discount,
+            }
+        else:
+            components = {
+                "Query relevance (75%)": 0.75 * relevance,
+                "Budget fit (15%)": 0.15 * budget_fit,
+                "Illustrative discount (10%)": 0.10 * discount,
+            }
+        if exact_name_match:
+            components["Exact-name bonus"] = 0.05
+        result["recommendation_score_breakdown"] = {
+            label: round(value * 100, 2)
+            for label, value in components.items()
+        }
         ranked.append(result)
 
     return sorted(
