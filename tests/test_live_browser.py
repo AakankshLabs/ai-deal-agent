@@ -1,6 +1,6 @@
-"""Live browser smoke tests for the deployed Streamlit application.
+"""Browser smoke tests for the Streamlit application.
 
-Run with AI_DEAL_AGENT_URL set to the deployment URL and Playwright Chromium installed.
+The GitHub Actions workflow starts the app locally and sets AI_DEAL_AGENT_URL.
 """
 import os
 import re
@@ -12,10 +12,7 @@ except ModuleNotFoundError:  # The standard unit-test job does not install brows
     sync_playwright = None
 
 
-APP_URL = os.getenv(
-    "AI_DEAL_AGENT_URL",
-    "https://ai-deal-agent-8rzwdsvxlrxjwtmpripdjw.streamlit.app/",
-)
+APP_URL = os.getenv("AI_DEAL_AGENT_URL", "http://127.0.0.1:8501")
 
 
 @unittest.skipIf(sync_playwright is None, "Playwright is installed only in the live-browser workflow")
@@ -33,13 +30,19 @@ class LiveBrowserSmokeTests(unittest.TestCase):
     def setUp(self):
         self.context = self.browser.new_context(accept_downloads=True)
         self.page = self.context.new_page()
-        response = self.page.goto(APP_URL, wait_until="domcontentloaded", timeout=120_000)
-        self.assertIsNotNone(response, "The deployment returned no HTTP response.")
+        response = self.page.goto(APP_URL, wait_until="domcontentloaded", timeout=30_000)
+        self.assertIsNotNone(response, "The local Streamlit server returned no HTTP response.")
         self.assertLess(response.status, 400, f"App returned HTTP {response.status}")
-        self.page.locator('[data-testid="stAppViewContainer"]').wait_for(timeout=120_000)
-        self.page.get_by_role(
-            "heading", name="🛍️ AI Deal Discovery & Marketing Agent"
-        ).wait_for(timeout=60_000)
+        try:
+            self.page.get_by_role(
+                "heading", name=re.compile("AI Deal Discovery & Marketing Agent")
+            ).wait_for(timeout=30_000)
+        except Exception as error:
+            body = self.page.locator("body").inner_text(timeout=5_000)
+            self.fail(
+                "Streamlit app did not render its expected title. "
+                f"URL={self.page.url!r}; page text={body[:1500]!r}; cause={error}"
+            )
 
     def tearDown(self):
         self.context.close()
@@ -49,7 +52,7 @@ class LiveBrowserSmokeTests(unittest.TestCase):
         self.page.get_by_role(
             "button", name=re.compile("Find personalized deals")
         ).click()
-        self.page.wait_for_timeout(1200)
+        self.page.wait_for_timeout(500)
 
     def test_homepage_loads_and_shows_sample_catalogue_disclaimer(self):
         self.assertTrue(
