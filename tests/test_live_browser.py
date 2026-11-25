@@ -58,7 +58,8 @@ class LiveBrowserSmokeTests(unittest.TestCase):
         self.assertTrue(
             self.page.get_by_text(re.compile("illustrative sample products")).is_visible()
         )
-        self.assertTrue(self.page.get_by_role("combobox", name="Choose a shopper persona").is_visible())
+        # Streamlit renders the selectbox label separately from its React Aria input.
+        self.assertTrue(self.page.get_by_text("Choose a shopper persona", exact=True).is_visible())
 
     def test_search_returns_headphone_recommendations(self):
         self.search("headphones")
@@ -96,7 +97,8 @@ class LiveBrowserSmokeTests(unittest.TestCase):
     def test_feedback_can_be_submitted(self):
         self.search("headphones")
         self.page.get_by_text("Was this recommendation relevant?").first.wait_for()
-        self.page.get_by_role("radio", name="👍 Relevant").check()
+        # Each recommended product has its own feedback form; interact with the first card.
+        self.page.get_by_role("radio", name="👍 Relevant").first.check()
         self.page.get_by_role("button", name="Submit feedback").first.click()
         self.page.get_by_text("Feedback recorded for this session.").wait_for(timeout=10_000)
         self.assertTrue(self.page.get_by_text("Feedback recorded for this session.").is_visible())
