@@ -183,6 +183,8 @@ The repository now includes planning and engineering documents for the next stag
 - [Search and recommendation evaluation plan](docs/EVALUATION_PLAN.md)
 - [Initial database design](docs/DATABASE_DESIGN.md)
 - [Local environment template](.env.example)
+- [Read-only FastAPI contract and local run instructions](docs/API.md)
+- [Dedicated infrastructure account setup](docs/ACCOUNT_SETUP.md)
 
 The next implementation gate is to validate the initial customer/category hypothesis and obtain an authorized product-data source before connecting live offers. Keep synthetic sample records clearly labelled.
 
