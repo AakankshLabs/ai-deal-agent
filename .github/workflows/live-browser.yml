@@ -5,6 +5,18 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/live-browser.yml"
+      - "app.py"
+      - "recommendations.py"
+      - "data/**"
+      - "requirements.txt"
+      - "tests/test_live_browser.py"
+  pull_request:
+    branches: [main]
+    paths:
+      - "app.py"
+      - "recommendations.py"
+      - "data/**"
+      - "requirements.txt"
       - "tests/test_live_browser.py"
   workflow_dispatch:
 
@@ -18,7 +30,7 @@ concurrency:
 jobs:
   browser-smoke-tests:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -32,7 +44,30 @@ jobs:
           python -m pip install -r requirements.txt playwright
       - name: Install Chromium
         run: python -m playwright install --with-deps chromium
-      - name: Test deployed Streamlit application
+      - name: Start Streamlit application
+        run: |
+          nohup python -m streamlit run app.py \
+            --server.headless true \
+            --server.address 127.0.0.1 \
+            --server.port 8501 \
+            --browser.gatherUsageStats false > /tmp/streamlit.log 2>&1 &
+          echo $! > /tmp/streamlit.pid
+      - name: Wait for Streamlit health endpoint
+        run: |
+          for attempt in $(seq 1 60); do
+            if curl --silent --fail http://127.0.0.1:8501/_stcore/health; then
+              echo "Streamlit is healthy."
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Streamlit did not become healthy. Server log:"
+          cat /tmp/streamlit.log
+          exit 1
+      - name: Test Streamlit application in Chromium
         env:
-          AI_DEAL_AGENT_URL: https://ai-deal-agent-8rzwdsvxlrxjwtmpripdjw.streamlit.app/
+          AI_DEAL_AGENT_URL: http://127.0.0.1:8501
         run: python -m unittest discover -s tests -p "test_live_browser.py" -v
+      - name: Show Streamlit server log on failure
+        if: failure()
+        run: cat /tmp/streamlit.log
