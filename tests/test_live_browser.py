@@ -58,7 +58,7 @@ class LiveBrowserSmokeTests(unittest.TestCase):
         self.assertTrue(
             self.page.get_by_text(re.compile("illustrative sample products")).is_visible()
         )
-        self.assertTrue(self.page.get_by_label("Choose a shopper persona").is_visible())
+        self.assertTrue(self.page.get_by_role("combobox", name="Choose a shopper persona").is_visible())
 
     def test_search_returns_headphone_recommendations(self):
         self.search("headphones")
@@ -84,8 +84,9 @@ class LiveBrowserSmokeTests(unittest.TestCase):
         )
 
     def test_persona_can_be_changed_and_used_for_search(self):
-        persona = self.page.get_by_label("Choose a shopper persona")
-        persona.select_option(label="Competitive gamer")
+        persona = self.page.get_by_role("combobox", name="Choose a shopper persona")
+        persona.click()
+        self.page.get_by_role("option", name="Competitive gamer").click()
         self.search("gaming keyboard")
         self.assertTrue(
             self.page.get_by_text(re.compile("Found \\d+ matching sample product", re.I)).is_visible()
@@ -95,11 +96,10 @@ class LiveBrowserSmokeTests(unittest.TestCase):
     def test_feedback_can_be_submitted(self):
         self.search("headphones")
         self.page.get_by_text("Was this recommendation relevant?").first.wait_for()
-        self.page.get_by_text("👍 Relevant").first.click()
+        self.page.get_by_role("radio", name="👍 Relevant").check()
         self.page.get_by_role("button", name="Submit feedback").first.click()
-        self.assertTrue(
-            self.page.get_by_text("Feedback recorded for this session.").is_visible()
-        )
+        self.page.get_by_text("Feedback recorded for this session.").wait_for(timeout=10_000)
+        self.assertTrue(self.page.get_by_text("Feedback recorded for this session.").is_visible())
 
     def test_session_analytics_csv_can_be_downloaded(self):
         self.search("headphones")
