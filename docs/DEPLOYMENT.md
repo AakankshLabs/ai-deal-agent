@@ -1,41 +1,37 @@
-# Deploy the Streamlit prototype
+# Deployment
 
-This repository can be deployed to Streamlit Community Cloud. Deployment is a separate manual step; passing GitHub Actions tests does not publish the app.
+## Current status
 
-## Before you deploy
+The Streamlit prototype can be deployed to Streamlit Community Cloud for demonstration. The FastAPI service is a separate read-only API and has not yet been deployed. No production database, customer accounts, merchant workspace, or live retailer feed exists.
 
-- Confirm the repository is public or otherwise accessible to your Streamlit account.
-- Confirm the default branch is `main`.
-- Confirm `app.py`, `recommendations.py`, `requirements.txt`, and `data/products.json` are committed.
-- This prototype uses synthetic sample products only. It does not require API keys or secrets.
+## Run the FastAPI service locally
 
-## Deployment steps
+    python -m pip install -r requirements.txt
+    uvicorn backend.app.main:app --host 127.0.0.1 --port 8000
 
-1. Open [Streamlit Community Cloud](https://share.streamlit.io/) and sign in with GitHub.
-2. Select **Create app**.
-3. Choose repository: `AakankshLabs/ai-deal-agent`.
-4. Choose branch: `main`.
-5. Set the main file path to `app.py`.
-6. Open **Advanced settings** only if you need to select a Python version. Use Python 3.11 to match the GitHub Actions workflow.
-7. Select **Deploy** and wait for the build to finish.
-8. Open the generated app URL and test at least:
-   - a search such as `headphones`;
-   - a low budget and a higher budget;
-   - each persona;
-   - the score breakdown expander;
-   - relevant / not relevant feedback;
-   - the session analytics CSV download.
+Open http://127.0.0.1:8000/docs for interactive API documentation.
 
-## After deployment
+## Hosting decision
 
-- Add the hosted URL to the repository README and portfolio only after you have verified it works.
-- Check the Streamlit app logs if startup fails.
-- When code changes are pushed to `main`, Streamlit Community Cloud can rebuild the app.
-- Do not add passwords, API keys, or personal data to the repository.
+Evaluate Render and other hosts against current commercial-use terms, region availability, idle behaviour, logs, backups, data processing terms, and expected traffic. Do not assume a free personal or hobby tier permits commercial operation.
 
-## Important product limitations
+## Secrets
 
-- Search analytics and feedback are stored only in the active Streamlit session. They are not persisted to a database or available as cross-user analytics.
-- Product records, prices, discounts, and sellers are synthetic sample data.
-- Recommendation ranking is deterministic and heuristic; it is not an LLM or trained model.
-- The hand-labelled 30-query benchmark is a regression check, not a real-world recommendation quality study.
+- Keep credentials in the hosting provider's encrypted environment-variable settings.
+- Never commit .env files, API keys, database URLs, OAuth tokens, or customer information.
+- Use .env.example only as a list of variable names and safe placeholders.
+- Rotate any credential that is accidentally exposed.
+
+## Pre-launch checklist
+
+- [ ] Production domain and HTTPS configured.
+- [ ] Database backups and restore test completed.
+- [ ] Authentication and role-based authorization reviewed.
+- [ ] Merchant tenant isolation tested.
+- [ ] Rate limiting and abuse controls enabled.
+- [ ] Privacy notice, terms, retention and deletion workflows reviewed.
+- [ ] Authorized product data source and freshness policy verified.
+- [ ] Error monitoring and alert routing tested.
+- [ ] Payment provider and webhook signatures tested in sandbox.
+- [ ] Security review and incident-response owner assigned.
+- [ ] Load, integration, and end-to-end tests pass.

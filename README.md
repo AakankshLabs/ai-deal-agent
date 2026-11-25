@@ -173,6 +173,21 @@ The app is structured for deployment on Streamlit Community Cloud. Follow the st
 - [x] Document the Streamlit Community Cloud deployment process.
 - [ ] Deploy and run external usability testing.
 
+## Product foundation (v0.2)
+
+The repository now includes planning and engineering documents for the next stage. These describe the target design; they do not imply that the future backend, database, live feeds, or merchant portal have already been implemented.
+
+- [Product requirements](docs/PRODUCT_REQUIREMENTS.md)
+- [Proposed architecture](docs/ARCHITECTURE.md)
+- [Product data and trust policy](docs/DATA_POLICY.md)
+- [Search and recommendation evaluation plan](docs/EVALUATION_PLAN.md)
+- [Initial database design](docs/DATABASE_DESIGN.md)
+- [Local environment template](.env.example)
+- [Read-only FastAPI contract and local run instructions](docs/API.md)
+- [Dedicated infrastructure account setup](docs/ACCOUNT_SETUP.md)
+
+The next implementation gate is to validate the initial customer/category hypothesis and obtain an authorized product-data source before connecting live offers. Keep synthetic sample records clearly labelled.
+
 ## Portfolio context
 
 This project demonstrates an early product concept at the intersection of **deal discovery, customer segmentation, recommendation logic, and marketing content workflows**.
