@@ -6,7 +6,10 @@ import os
 import re
 import unittest
 
-from playwright.sync_api import sync_playwright
+try:
+    from playwright.sync_api import sync_playwright
+except ModuleNotFoundError:  # The standard unit-test job does not install browser dependencies.
+    sync_playwright = None
 
 
 APP_URL = os.getenv(
@@ -15,6 +18,7 @@ APP_URL = os.getenv(
 )
 
 
+@unittest.skipIf(sync_playwright is None, "Playwright is installed only in the live-browser workflow")
 class LiveBrowserSmokeTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
